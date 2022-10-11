@@ -1,0 +1,13 @@
+
+.WelcomText{
+    float: right;
+    color: deeppink;
+    font-weight: bold;
+    font-style: italic;
+}
+.homePageImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}

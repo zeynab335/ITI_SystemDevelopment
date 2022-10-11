@@ -1,0 +1,13 @@
+body{
+    background-color: pink;
+    
+}
+
+hr{
+    background-color: #666;
+}
+
+
+.textUnderline{
+    text-decoration: underline;
+}
