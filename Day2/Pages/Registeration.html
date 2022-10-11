@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link href="../Styles/Styles.css" rel="stylesheet" />
+
+    <!-- start style in Registeration page -->
+    <link href="../Styles/Registeration.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form class="RegForm" action="./Page1.html">
+        <table cellspacing="10" >
+            <!-- start tabele body -->
+            <tr>
+                <td>
+                    <label for="fName"> First Name</label>
+                </td>
+                <td>
+                    <input id="fName" type="text" name="fName"/>
+                </td>
+            </tr>
+
+            <!-- start last name row -->
+            <tr>
+                <td>
+                    <label for="lName"> Last Name</label>
+                </td>
+                <td>
+                    <input id="lName" type="text" name="lName"/>
+                </td>
+               
+            </tr>
+
+            <!-- start last name row -->
+            <tr>
+                <td>
+                    <label for="password"> password</label>
+                </td>
+                <td>
+                    <input id="password" type="password" name="password"/>
+                </td>
+               
+            </tr>
+
+            <!-- start gender rows -->
+            <tr>
+                <td rowspan=2>
+                    <label for="Gender" style="text-align: center;"> Gender </label>
+                </td>
+                <td>
+                    <input id="male" type="radio" name="gender"/>
+                    <label for="male" value="male" name="male">Male</label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input id="female" type="radio" name="gender"/>
+                    <label for="female" value="female" name="female"> Female</label>
+                </td>
+            </tr>
+            <!-- end gender rows -->
+
+
+            <!-- start Birthday row -->
+            <tr>
+                <td>
+                    <label > Birthday: </label>
+                    <!-- start select month from  -->
+                    <select>
+                        <option selected>
+                            select a month
+                        </option>
+                        <option value="junuary">
+                            junuary
+                        </option>
+                        <option value="junuary">
+                            February
+                        </option>
+                        <option value="junuary">
+                            March
+                        </option>
+                        <option value="junuary">
+                            Abril
+                        </option>
+                        <option value="junuary">
+                            May
+                        </option>
+                        <option value="junuary">
+                            June
+                        </option>
+                        <option value="junuary">
+                            July
+                        </option>
+                        <option value="junuary">
+                            junuary
+                        </option>
+                        <option value="junuary">
+                            August 
+                        </option>
+                        <option value="junuary">
+                            October
+                        </option>
+                        <option value="junuary">
+                            November
+                        </option>
+                        <option value="junuary">
+                            December
+                        </option>
+                        
+
+                    </select>
+                </td>
+                <td>
+                    <input type="number" placeholder="dd" min="1">
+                    <input type="number" placeholder="yyyy"> 
+                </td>
+            </tr>
+
+            <!-- start interests -->
+            <tr>
+                <td colspan="2" style="text-align: center!important;">
+                    <h2 style="margin: 0;"><u> Interests</u> </h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="sports" type="checkbox" name="interests" value="sports"/>
+                    <label for="sports" >Sports</label>
+                </td>
+                <td>
+                    <input id="music" type="checkbox" name="interests" value="music"/>
+                    <label for="music">Music</label>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="books" type="checkbox" name="interests" value="books"/>
+                    <label for="books">Books</label>
+                </td>
+                <td>
+                    <input id="computerStuff" type="checkbox" name="interests" value="computerStuff"/>
+                    <label for="computerStuff">Computer Stuff</label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input id="fashion" type="checkbox" name="interests" value="computerStuff"/>
+                    <label for="fashion">Fashion</label>
+                </td>
+                <td>
+                    <input id="movies" type="checkbox" name="interests" value="movies"/>
+                    <label for="movies">Movies</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;"> 
+                    <input type="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

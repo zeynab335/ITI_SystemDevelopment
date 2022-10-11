@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="../Styles/Styles.css" rel="stylesheet" />
+    <link href="../Styles/Login.css" rel="stylesheet" />
+
+
+    
+</head>
+<body>
+    <form class="loginForm" action="Page3.html">
+        <fieldset>
+            <legend> Log In</legend>
+
+            <!-- start forms inputs-->
+            <!-- stat username -->
+            <div class="formGp">
+                <label for="usename"> User Name:  </label>
+                <input id ="usename" type="text" placeholder="Enter your name here!" name="username">
+    
+            </div>
+          
+            <!-- start password -->
+            <div class="formGp">
+                <label for="password"> Password:  </label>
+                <input type="password" id="password" name="password"/>
+            </div>
+          
+            <!-- start Location -->
+            <div>
+                <label> Select Your Location:  </label>
+                <select>
+                    <optgroup label="Africa">
+                        <option>Egypt</option>
+                        <option>Sudan</option>
+                        <option>Namibia</option>
+                    </optgroup>
+
+                    <optgroup label="Europe">
+                        <option>France</option>
+                        <option>Russia</option>
+                        <option>UK</option>
+                    </optgroup>
+
+                    <optgroup label="North America" disabled>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                        <option>USA</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <!-- remember -->
+            <div>
+                <input accesskey="m" type="checkbox" id="remember"/>
+                <label for="remember"> Remember <u>M</u>e</label>
+            </div>
+
+            <input type="submit" value="Login"/>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
