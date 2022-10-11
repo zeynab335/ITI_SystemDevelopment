@@ -1,0 +1,27 @@
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+fieldset{
+    width: 500px;
+}
+
+.formGp{
+    margin-bottom: 10px;
+}
+
+optgroup{
+    font-weight: bold;
+    font-style: italic
+}
+optgroup option{
+    font-style: normal!important;
+}
+
+
+.loginForm input::placeholder{
+    color: black;
+}

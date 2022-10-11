@@ -1,0 +1,47 @@
+.RegForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.RegForm table{
+    width: 450px;
+    /* box-shadow: 10px 10px 0px brown; */
+    border: 10px solid rgb(165, 42, 42,0.1);
+    border-bottom-color: brown;
+    border-right-color: brown;
+
+}
+
+.RegForm table td{
+    width: 50%;
+    border: 1px solid rgb(165, 42, 42,0.1);
+    border-top-color: brown;
+    border-left-color: brown;
+}
+
+
+.RegForm table tr td input[type="text"] ,
+.RegForm table tr td input[type="password"] {
+   width: 97%;
+   border: 0;
+    padding: 5px;
+}
+
+.RegForm table tr td input[type="number"] 
+{
+    width: 50px !important;
+    border: 0;
+}
+.RegForm table tr td input[type="number"]::placeholder{  
+    color: black;
+}
+
+
+.RegForm table tr td input:focus{
+    border: 0!important;
+    border-radius:  0!important;
+    box-shadow: none!important;
+
+}

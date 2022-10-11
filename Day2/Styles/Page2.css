@@ -1,0 +1,29 @@
+body{
+    height: 120vh;
+}
+
+
+.header{
+    text-align: center;
+}
+.newFont{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.smallFont{
+    font-size: small;
+}
+.footerGIF  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RoutingPages{
+    width: 95%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.nextPage{
+    float: right;
+}
