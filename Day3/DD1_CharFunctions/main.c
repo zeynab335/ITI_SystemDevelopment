@@ -26,7 +26,7 @@ int main()
     char c2;
     printf("Enter Character \n");
     c2 = getche();
-    printf("Using getChar %c \n" ,c2);
+    printf("Using getChe %c \n" ,c2);
 
 
     /* getch () function reads a single character from the keyboard.
@@ -35,7 +35,7 @@ int main()
     char c3;
     printf("Enter Character \n");
     c3 = getch();
-    printf("Using getChar %c \n" ,c3);
+    printf("Using getCh %c \n" ,c3);
 
 
     return 0;
