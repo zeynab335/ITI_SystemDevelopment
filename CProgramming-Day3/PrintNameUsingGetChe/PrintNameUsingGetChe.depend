@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666126640 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day3\printnameusinggetche\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
