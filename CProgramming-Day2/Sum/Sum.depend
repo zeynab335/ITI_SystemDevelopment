@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666022489 source:h:\iti\content\c programming\days\day2_c\sum\main.c
+	<stdio.h>
+	<stdlib.h>
+
