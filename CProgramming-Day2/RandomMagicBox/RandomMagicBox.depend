@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666082826 source:h:\iti\content\c programming\days\day2_c\randommagicbox\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
