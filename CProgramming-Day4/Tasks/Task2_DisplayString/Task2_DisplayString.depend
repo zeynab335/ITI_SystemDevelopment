@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1666180389 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day4\tasks\task2_displaystring\main.c
+1666213450 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day4\tasks\task2_displaystring\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

@@ -28,11 +28,22 @@ int main()
 
     printf("\n");
 
+    /// Print Name array using For loop
+
     for(i=0 ; i<10 ; i++){
         printf("%c" , Name[i]);
         if(Name[i] == '\0') break;
     }
 
+
+    /// Print Name array using while loop
+    /*
+    i = 0;
+    while(Name[i]!= '\0'){
+        printf("%c" , Name[i]);
+        i++ ;
+    }
+    */
 
 
 
