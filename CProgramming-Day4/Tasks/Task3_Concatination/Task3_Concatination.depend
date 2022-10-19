@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666181185 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day4\tasks\task3_concatination\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
