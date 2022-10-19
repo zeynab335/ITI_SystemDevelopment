@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666215126 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day4\demo\dd4_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
