@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1666563617 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day6\employeefilteration_v2\main.c
-	<stdio.h>
-	<stdlib.h>
-	<windows.h>
-	<conio.h>
-

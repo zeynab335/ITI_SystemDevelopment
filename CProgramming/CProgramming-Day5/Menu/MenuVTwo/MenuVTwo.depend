@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666271685 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day5\menu\menuvtwo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+

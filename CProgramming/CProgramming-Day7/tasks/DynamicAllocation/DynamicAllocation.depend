@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666674508 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day7\tasks\dynamicallocation\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+

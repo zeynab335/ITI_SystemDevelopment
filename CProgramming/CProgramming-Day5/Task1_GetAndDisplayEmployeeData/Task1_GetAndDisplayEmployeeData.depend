@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1666267974 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day4\demo\task1_getanddisplayemployeedata\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	<conio.h>
+
+1666268966 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day5\task1_getanddisplayemployeedata\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<string.h>
+	<conio.h>
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1666021429 source:h:\iti\content\c programming\days\day2_c\magicbox\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1666022612 source:h:\iti\githup\iti_systemdevelopment\cprogramming-day2\magicbox\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
