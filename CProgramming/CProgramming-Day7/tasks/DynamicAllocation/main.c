@@ -41,9 +41,9 @@ void gotoxy( int column, int line )
 }
 
 /// Hightlight Function
-void printLine(col , row){
+void printLine(int col , int row , int size){
     int i;
-    for(i=0 ; i<10 ; i++){
+    for(i=0 ; i< size; i++){
         gotoxy(col+i , row);
         textattr(HighlightedColor);
         printf(" ");
@@ -53,146 +53,340 @@ void printLine(col , row){
 /// Start LineEditor
 
 /// Start LineEditor
-char* LineEditor (int col , int row , int SChar , int EChar ) {
-    //*line = (char*)calloc(100) ;
+  // return address of Array of Character
+    char** LineEditor (int c , int *size ,int *XPos , int *YPos ,int *SChar , int *EChar )
+    {
+        int i, j, circle, colPosition , ExFlag = 0 , endPosition , row , ExFlag2=0;
+        // to know what number of col will go in end
+        char ch , *end , *current , *start  , **line ;
 
-    char ch , *end , *current , *start ;
+        /// Start Allocate Array to Each Lines
+        line = (char**) malloc(c*sizeof(char*));
+        for(i=0 ; i<c ; i++){
+            line[i] = (char*) malloc(size[i]*sizeof(char));
+        }
 
-    // to know what number of col will go in end
-    int colPosition = col  , ExFlag = 0 , endPosition=col;
+        /// Initialize lines
 
-    start = line;
-    current = line;
-    end = line;
-
-    //printLine(colPosition , row);
-
-    do{
-        gotoxy( colPosition , row);
-
-        ch = getch();
-
-        switch(ch){
-
-            case Esc:
-                ExFlag=1;
-                break;
-
-            /// ********** Extended Keys  ************
-
-            /// press home case
-            case 71:
-                current = start;
-                colPosition = col ;
-                break;
-
-            /// press end case
-            case 79:
-                current = end;
-                colPosition= endPosition;
-                break;
-
-            /// press left arrow Case
-            case 75:
-                if(current > start){
-                    current--;
-                    colPosition -- ;
-                }
-
-                break;
-
-            /// press right arrow Case
-            case 77:
-                if(current < end){
-                    current++;
-                    colPosition ++;
-                }
-
-                break;
-
-            /// press enter
-            case Enter:
-                //null terminator
-                *end = '\0';
-                ExFlag = 1;
-                break;
-
-            default:
-                if(ch >= SChar && ch <= EChar){
-
-                    *current = ch;
-                    printf("%c",ch);
-                    colPosition++;
-                    current++;
-                         end++;
-                        endPosition ++ ;
-
-
-                }
-
-                break;
+        for(i=0 ; i<c ; i++){
+            for(j=0; j<size[i]-1;j++){
+                line[i][j] = ' ';
+            }
+            line[i][size[i]-1] = '\0';
         }
 
 
-    }while(!ExFlag);
+
+        /// For Each line in Form Get Data in Line
+
+        i=0 ;
+        j=0;
+        gotoxy(XPos[0],YPos[0]);
+
+        while(i<c && !ExFlag2){
+
+            colPosition     = XPos[i];
+            endPosition     = XPos[i];
+            row             = YPos[i];
+
+            start           = line[i];
+            current         = line[i];
+            end             = line[i];
+
+            j=0 , circle=0;
 
 
-    return line;
+            /// To get character by character and store in line of index
+                do{
+                    gotoxy( colPosition , row);
+                    ExFlag=0;
+                    ExFlag2 = 0;
+                    /*if (j >= size[i]){
+                            *end = '\0';
+                            ExFlag=1;
+                            break;
+                    }
+                    else ExFlag=0;
+                    */
 
-}
+                    ch = getch();
+
+                    switch(ch){
+
+                        /// Exist to menu Form
+                        case Esc:
+                            ExFlag=1;
+                            ExFlag2 = 1;
+
+                            /// Filter Lines to delete in display
+                            line[0][0] = -1;
+
+                            break;
+
+                        /// press Tap
+                        case 9:
+                            ///null terminator
+                                if(j<=size[i]){
+                                    *end = '\0';
+                                    ExFlag = 1;
+
+                                    if(i==c-1){
+                                        circle = 1;
+                                        row = YPos[0];
+                                    }
+                                    break;
+                                }
+
+
+                            break;
+
+
+                        /// ********** Extended Keys  ************
+
+                        /// press home case
+                        case 71:
+                            current = start;
+                            colPosition = XPos[i] ;
+                            break;
+
+                        /// press end case
+                        case 79:
+                            current = end;
+                            colPosition= endPosition;
+                            break;
+
+                        /// press left arrow Case
+                        case 75:
+                            if(current > start){
+                                current--;
+                                colPosition -- ;
+                            }
+
+                            break;
+
+                        /// press right arrow Case
+                        case 77:
+                            if(current < end){
+                                current++;
+                                colPosition ++;
+                            }
+
+                            break;
+
+                        /// Press Down
+                         case 80:
+                            ///null terminator
+                            *end = '\0';
+                            ExFlag = 1;
+                            if(i==c-1){
+                                circle = 1;
+                                row = YPos[0];
+                            }
+
+                            break;
+
+
+                            /// Press UP
+                            case 72:
+                                *end = '\0';
+                                ExFlag = 1;
+                                i--;i--;
+                                /*if(i!=0){
+                                    *end = '\0';
+                                    ExFlag = 1;
+                                    i--;
+                                }
+                                */
+
+                            break;
+
+                        /// press enter
+                        case Enter:
+                            //null terminator
+                            *end = '\0';
+                            ExFlag = 1;
+                            ExFlag2 = 1;
+
+                            break;
+
+                        default:
+                            if(ch >= SChar[i] && ch <= EChar[i]){
+                                if(colPosition < XPos[i]+size[i]){
+                                    *current= ch;
+                                    current++;
+                                    printf("%c",ch);
+                                    colPosition++;
+                                    endPosition++ ;
+                                    end++;
+                                    if(j<size[i]){
+                                        j++;
+                                    }
+
+                                }
+                            }
+
+
+                            break;
+                    }
+
+
+            }while(!ExFlag);
+
+                if(circle == 1){
+                    i=0;
+                }
+                else i++;
+        }
+
+
+        return line;
+
+    }
 
 
 
 /// SHow data by using getxy Function
-void ShowData(struct Employee *EmpData  , int index){
-    system("cls");
-    int i;
-    char PrintData[6][10] = { {"ID"} , {"Name"} , {"Salary"} , {"Address" } , {"Deduct"} };
-    char PrintDataSecCol[3][10] = { {"Age"} , {"Overtime"},  {"Gender"}  };
-    // start to print Employee data in col 1
+
+    void ShowData(struct Employee *EmpData  , int index)
+    {
+        system("cls");
+        int i=0 ,c=8;
+        int *SizeOFLines , *XPos , *YPos , *SChar , *EChar ;
+        char **Labels;
+
+        /// Start Initialization of Collections in Heap
+        // initialize pointers to Array of Size in Each line
+        SizeOFLines = (int*) malloc(c*sizeof(int));
+
+        // initialize pointers to Array of XPositions , YPositions
+
+        XPos = (int*) malloc(c*sizeof(int));
+        YPos = (int*) malloc(c*sizeof(int));
+
+        // initialize pointers to Array of Start Hexi number of Start , End Characters
+        SChar = (int*) malloc(c*sizeof(int));
+        EChar = (int*) malloc(c*sizeof(int));
+
+        /// end Initialization of Collections in Heap
+
+
+
+        /// Start Printing Form Details
+        Labels = (char**) malloc(8*sizeof(char*));
+
+        for(i=0 ; i<8 ; i++){
+            Labels[i] = (char*) malloc(10*sizeof(char*));
+        }
+        Labels[0] = "ID";
+        Labels[1] = "Name";
+        Labels[2] = "Salary";
+        Labels[3] = "Address";
+        Labels[4] = "Deduct";
+        Labels[5] = "Age";
+        Labels[6] = "Overtime";
+        Labels[7] = "Gender";
+
+
+        /// end Printing Form Details
+
+        // start to print Employee data in col 1
         for(i=0 ; i<5 ; i++){
             gotoxy(3, 5 + 3*i);
-            printf("%s : " , PrintData[i] );
+            printf("%s : " , Labels[i] );
         }
 
         // start to print Employee data in col 2
-        for(i=0 ; i<3 ; i++){
-            gotoxy(40, 5 + 3*i);
-            printf("%s : " ,PrintDataSecCol[i] );
+        gotoxy(40, 5);
+        printf("%s:" ,Labels[5] );
+        gotoxy(40, 8);
+        printf("%s:" ,Labels[6] );
+        gotoxy(40, 11);
+        printf("%s:" ,Labels[7] );
+
+        /// End Printing Form Details
+
+
+        SizeOFLines[0]=2;               /// ID Size
+        SizeOFLines[1]=10;              /// Name Size
+        SizeOFLines[2]=5;               /// Salary
+        SizeOFLines[3]=15;              /// Address
+        SizeOFLines[4]=5;               /// Deduct
+        SizeOFLines[5]=2;               /// Age
+        SizeOFLines[6]=5;               /// Overtime
+        SizeOFLines[7]=1;               /// Gender
+
+        /// Start Initialize XPos and YPos
+
+        for(i=0 ; i<5 ; i++) XPos[i] = 15;
+        for(i=5 ; i<8 ; i++) XPos[i] = 55;
+
+        for(i=0 ; i<5 ; i++) YPos[i] = 5+(3*i);
+        YPos[5] = 5;
+        YPos[6] = 8;
+        YPos[7] = 11;
+
+        /// end Initialize XPos and YPos
+
+
+        /// Start Initialize Start and End Characters
+        for(i=0 ; i<c ; i++){
+            switch(i){
+                /// ID - Age
+                case 0 :
+                case 5 :
+                    SChar[i]=45;
+                    EChar[i]=57;
+                    break;
+
+                /// Name - Address - Gender Characters
+                case 1 :
+                case 3 :
+                case 7 :
+                    SChar[i]=97;
+                    EChar[i]=122;
+                    break;
+
+                /// Salary - Deduct - Overtime Characters
+                case 2 :
+                case 4 :
+                case 6 :
+                    SChar[i]=48;
+                    EChar[i]=57;
+                    break;
+            }
+
         }
+        /// end Initialize Start and End Characters
 
 
-        printLine(15 , 5);
-        printLine(15 , 8);
-        printLine(15 , 11);
-        printLine(15 , 14);
-        printLine(15 , 17);
-
-        printLine(55 , 5);
-        printLine(55 , 8);
-        printLine(55 , 11);
+        /// Start Drawing Inputs Of Form
+        for(i=0 ; i< c ; i++){
+            printLine(XPos[i], YPos[i] , SizeOFLines[i]);
+        }
+        /// end Drawing Inputs Of Form
 
 
-        //gotoxy(15,5);
-        //scanf("%i" , &EmpData[index].ID);
-        EmpData[index].ID = atoi(LineEditor(15,5,45,57));
+        char** Data = LineEditor(c , SizeOFLines ,XPos , YPos ,SChar , EChar );
 
-        //EmpData[index].Name = LineEditor(15,8,97,122);
-        strcpy(EmpData[index].Name , LineEditor(15,8,97,122));
+        EmpData[index].ID= atoi(Data[0]);
+        strcpy(EmpData[index].Name , Data[1]);
+        EmpData[index].Salary   = atoi(Data[2]);
+        strcpy(EmpData[index].Adress , Data[3]);
 
-        EmpData[index].Salary = atoi(LineEditor(15,11,48,57));
+        EmpData[index].Deduct   = atoi(Data[4]);
+        EmpData[index].Age      = atoi(Data[5]);
+        EmpData[index].Overtime = atoi(Data[6]);
+        EmpData[index].Gender  = Data[7];
 
-        strcpy(EmpData[index].Adress ,LineEditor(15,14,97,122));
+        /// Free Allocations in heap
 
-        EmpData[index].Deduct = atoi(LineEditor(15,17,48,57));
+        free(Labels);
+        free(SizeOFLines);
+        free(XPos);
+        free(YPos);
+        free(SChar);
+        free(EChar);
 
-        EmpData[index].Age = atoi(LineEditor(55,5,48,57));
-
-        EmpData[index].Overtime = atoi(LineEditor(55,8,48,57));
-
-        _flushall();
-
-        EmpData[index].Gender = LineEditor(55,11,97,122);
 }
 
 
@@ -252,7 +446,7 @@ void ReadEmployeesDetails (struct Employee *Emp , int index) {
 void ViewEmployeeDetailsByID(struct Employee *EmpData ,  int ID){
     int i =0 , Found = 0 ;
 
-    while(i < 10){
+    while(i < EmpSize){
         if(EmpData[i].ID == ID ){
             Found = 1;
             printf("Employee ID   = %i \n" , EmpData[i].ID );
@@ -275,7 +469,7 @@ void ViewEmployeeDetails(struct Employee *EmpData){
 
     for(j=0 ; j<EmpSize ; j++){
 
-        if(EmpData[j].ID > 0 && strlen(EmpData[j].Name) > 0){
+        if(EmpData[j].ID > 0 && strlen(EmpData[j].Name) >= 0){
             Found = 1;
 
             printf("Employee ID is : %i \n" ,  EmpData[j].ID );
@@ -299,7 +493,6 @@ void DeleteEmpByID(struct Employee *EmpData  , int ID){
     int i=0 , index , Found = 0;
 
     while(i < EmpSize){
-        printf("%i" , EmpData[i].ID);
         if(EmpData[i].ID == ID ){
             Found = 1;
             index = i;
@@ -364,7 +557,7 @@ int main()
     char ch , FilterByName[10];
 
     // initialize current Variable to store index of item in Menu to color it
-    int i  , Current=0 , FilterByID , AddByIndex;
+    int i  , j , Current=0 , FilterByID , AddByIndex;
 
     // initialize ExitFlag to indicate that user want to Exit Menu
     int ExitFlag = 0;
@@ -383,7 +576,11 @@ int main()
 
     for(i=0 ; i<EmpSize ; i++){
       Emp[i].ID = -1;
+      for(j=0; j<10 ; j++){
+        Emp[i].Name[j] = ' ';
+      }
     }
+
 
 
     /// *******************************************  ///
@@ -518,7 +715,6 @@ int main()
                 }
                 break;
 
-
         }
 
     }while(!ExitFlag);
@@ -526,5 +722,9 @@ int main()
 
     // to hide text bottom in console
     _getch();
+
+     free(Emp);
+
+
     return 0;
 }
