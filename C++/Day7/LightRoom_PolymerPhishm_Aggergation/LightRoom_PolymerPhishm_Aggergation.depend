@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1667477807 source:h:\iti\githup\iti_systemdevelopment\c++\day7\lightroom_polymerphishm_aggergation\point.cpp
+	<iostream>
+	"Point.h"
+
+1667477788 h:\iti\githup\iti_systemdevelopment\c++\day7\lightroom_polymerphishm_aggergation\point.h
+
+1667481173 source:h:\iti\githup\iti_systemdevelopment\c++\day7\lightroom_polymerphishm_aggergation\main.cpp
+	<iostream>
+	"G:\ProgramSetup\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+	"Point.h"
+
+1667302146 g:\programsetup\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

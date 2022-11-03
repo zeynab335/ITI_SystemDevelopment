@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1667475496 source:h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\shape.cpp
+	"Shape.h"
+	<iostream>
+
+1667475579 h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\shape.h
+
+1667475242 source:h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\square.cpp
+	"Square.h"
+	<iostream>
+
+1667475304 h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\square.h
+	"Rectangle.h"
+
+1667475915 h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\rectangle.h
+	"Shape.h"
+
+1667475878 source:h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1667475797 h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\circle.h
+	"Shape.h"
+
+1667477448 source:h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\main.cpp
+	<iostream>
+	"Shape.h"
+	"Rectangle.h"
+	"Square.h"
+	"Circle.h"
+	"Triangle.h"
+
+1667475945 h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\triangle.h
+	"Shape.h"
+
+1667475929 source:h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+
+1667475959 source:h:\iti\githup\iti_systemdevelopment\c++\day7\shapes_polymerphism\triangle.cpp
+	"Triangle.h"
+	<iostream>
+

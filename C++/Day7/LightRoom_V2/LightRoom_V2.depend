@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1667485445 source:h:\iti\githup\iti_systemdevelopment\c++\day7\lightroom_v2\paint.cpp
+	<iostream>
+	"Paint.h"
+
+1667484613 h:\iti\githup\iti_systemdevelopment\c++\day7\lightroom_v2\paint.h
+
+1667486414 source:h:\iti\githup\iti_systemdevelopment\c++\day7\lightroom_v2\main.cpp
+	<iostream>
+	"G:\ProgramSetup\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+	"Paint.h"
+
+1667302146 g:\programsetup\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
