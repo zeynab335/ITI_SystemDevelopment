@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1667386972 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\main.cpp
+	<iostream>
+	"G:\ProgramSetup\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+	"Point.h"
+
+1667302146 g:\programsetup\codeblocks\mingw\include\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
+1667322199 h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\point.h
+
+1667340766 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\point.cpp
+	<iostream>
+	"Point.h"
+
+1667327574 h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\rectangle.h
+	"Point.h"
+
+1667328040 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+
+1667328975 h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\circle.h
+	"Point.h"
+
+1667329571 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1667327043 h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\graphics.h
+	"Point.h"
+	"G:\ProgramSetup\CodeBlocks\MinGW\include\graphics.h"
+
+1667329571 source:h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1667328975 h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\circle.h
+	"Point.h"
+
+1667322199 h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\point.h
+
+1667340766 source:h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\point.cpp
+	<iostream>
+	"Point.h"
+
+1667328040 source:h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+
+1667327574 h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\rectangle.h
+	"Point.h"
+
+1667429571 source:h:\iti\githup\iti_systemdevelopment\c++\day6\lightroom_using_relation_in_oop\main.cpp
+	<iostream>
+	"G:\ProgramSetup\CodeBlocks\MinGW\include\graphics.h"
+	<conio.h>
+	"Point.h"
+

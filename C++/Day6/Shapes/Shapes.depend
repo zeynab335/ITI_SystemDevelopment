@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1667471968 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\main.cpp
+	<iostream>
+	"Shape.h"
+	"Rectangle.h"
+	"Square.h"
+	"Circle.h"
+	"Triangle.h"
+
+1667475288 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\shape.h
+
+1667393444 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\shape.cpp
+	"Shape.h"
+	<iostream>
+
+1667393283 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\rectangle.cpp
+	"Rectangle.h"
+	<iostream>
+
+1667389419 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\rectangle.h
+	"Shape.h"
+
+1667393303 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\square.cpp
+	"Square.h"
+	<iostream>
+
+1667389696 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\square.h
+	"Rectangle.h"
+
+1667393489 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1667389125 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\circle.h
+	"Shape.h"
+
+1667393171 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\triangle.cpp
+	"Triangle.h"
+	<iostream>
+
+1667389907 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\triangle.h
+	"Shape.h"
+
