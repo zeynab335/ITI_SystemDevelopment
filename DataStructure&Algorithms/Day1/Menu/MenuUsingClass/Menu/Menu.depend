@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1669043400 source:h:\iti\githup\iti_systemdevelopment\datastructure&algorithms\day1\menu\menuusingclass\menu\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+
