@@ -46,7 +46,7 @@ class Stack
         /// Constractor
 
         static Employee *pTOS;
-        static int Size;
+        static int Length;
 
         Stack()
         {
@@ -60,6 +60,7 @@ class Stack
         void Push(Employee *NewEmp){
             //Employee *NewEmp = new Employee(Emp);
 
+            if(!isFull()){
             /// if no space
             if(NewEmp == NULL){
                 cout << "Stack is Full/n";
@@ -81,10 +82,10 @@ class Stack
                     NewEmp->pNext = NULL;
                     pTOS = NewEmp;
                 }
-                Size++;
+                Length++;
             }
-
         }
+    }
 
         /// POP
         Employee * Pop(){
@@ -97,7 +98,7 @@ class Stack
                 pTOS = pTOS->pPrev;
 
                 delete pTemp;
-                Size--;
+                Length--;
             }
             else{
                 cout <<"Stack is Empty \n";
@@ -166,7 +167,7 @@ class Stack
 
 
 Employee* Stack::pTOS = NULL;
-int Stack::Size = 0;
+int Stack::Length = 0;
 
 int main()
 {
@@ -180,13 +181,15 @@ int main()
     s1.Push(&E3);
 
     s1.viewContent();
-    s1.Pop();
-    s1.Pop();
+
 
     cout << "\n******** Peek Last Employee ******** \n";
     Employee::DisplayEmployeeData(s1.Peek());
 
-    cout << "Size = " << Stack::Size << endl;
+    s1.Pop();
+    s1.Pop();
+
+    cout << "Length = " << Stack::Length << endl;
     cout << "\n******** view Employees after Pop 2 Emp ******** \n";
     s1.viewContent();
 
