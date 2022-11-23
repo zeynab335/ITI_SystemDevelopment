@@ -11,6 +11,26 @@ int getIndexOfMinValue(int arr[] , int fsIndex ,int lsIndex){
     return index;
 }
 
+/// using 2 for loops
+/*void SelectionSort(int arr[] , int Size){
+    int index;
+    for(int i=0 ; i<Size ; i++){
+        for(int j= 0 ; j<Size ; j++){
+        if(arr[j] > arr[j+1]){
+            swap(arr[j] ,  arr[j+1]);
+        }
+     }
+
+   }
+
+    /// print sorted data
+    for(int i=0 ; i<Size ; i++){
+        cout << "Element" << i+1 << " = " << arr[i] << "\n";
+    }
+}
+*/
+
+/// using MinValue
 void SelectionSort(int arr[] , int Size){
     int index;
     for(int i=0 ; i<Size ; i++){
