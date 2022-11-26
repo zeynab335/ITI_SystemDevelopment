@@ -66,7 +66,7 @@ from Instructor
 order by(Salary) desc; 
 
 
--- 11 Select instructor name and his salary but if there is no salary display instructor bonus keyword. “use coalesce Function”
+-- 11 Select instructor name and his salary but if there is no salary display instructor bonus keyword. ï¿½use coalesce Functionï¿½
 select Ins_Name , coalesce(convert(char , Salary), 'instructor Bonus')
 from Instructor
 
@@ -83,7 +83,7 @@ where S.St_super = Sup.St_Id
 
 
 -- 14.	Write a query to select the highest two salaries in Each Department for instructors who have salaries.
--- “using one of Ranking Functions”
+-- ï¿½using one of Ranking Functionsï¿½
 
 select * from (
 select Salary ,Dept_Id ,ROW_NUMBER() over(partition by(Dept_Id) order by(Salary) desc ) as Rw
@@ -93,7 +93,7 @@ where Rw <3
 
 
 
--- 15 Write a query to select a random  student from each department.  “using one of Ranking Functions”
+-- 15 Write a query to select a random  student from each department.  ï¿½using one of Ranking Functionsï¿½
 select * from ( select St_Fname , Dept_Id , ROW_NUMBER() over(partition by(Dept_Id) order by(newId())) as Rw 
 from Student) as newtable
 where Rw=1

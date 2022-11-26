@@ -1,7 +1,7 @@
 use AdventureWorks2012;
 
 -- 1.	Display the SalesOrderID, ShipDate of the SalesOrderHeader table (Sales schema) to show SalesOrders
---		that occurred within the period ‘7/28/2002’ and ‘7/29/2014’
+--		that occurred within the period ï¿½7/28/2002ï¿½ and ï¿½7/29/2014ï¿½
 select SalesOrderID , ShipDate
 from Sales.SalesOrderHeader
 where OrderDate between convert(datetime, '7/28/2002') and convert(datetime, '7/29/2014') 
@@ -97,7 +97,7 @@ where 2=3
 
 
 
---12.	Using union statement, retrieve the today’s date in different styles using convert or format funtion.
+--12.	Using union statement, retrieve the todayï¿½s date in different styles using convert or format funtion.
 select CONVERT(VARCHAR(10), getdate())
 union
 select format(getdate() , 'dd/MM/yyyy') 
