@@ -7,6 +7,9 @@ Rectangle::Rectangle()
     std::cout << "Cons Rectangle \n" ;
 }
 
+Rectangle::Rectangle(int d1 ,int d2){Dim1=d1 ; Dim2=d2 ; std::cout << "rectangle cons \n" ;}
+
+
 /// chain Constractor
 
 Rectangle::~Rectangle()

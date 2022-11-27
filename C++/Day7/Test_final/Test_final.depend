@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1667774116 source:h:\iti\githup\iti_systemdevelopment\c++\day7\test_final\main.c
+	<stdio.h>
+	<stdlib.h>
+

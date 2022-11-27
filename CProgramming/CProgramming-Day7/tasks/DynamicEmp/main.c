@@ -142,10 +142,13 @@ char* _LineEditor (int col , int row , int SChar , int EChar ) {
 }
     /// SHow data by using getxy Function
 
+
+
+
     // return address of Array of Character
     char** LineEditor (int c , int *size ,int *XPos , int *YPos ,int *SChar , int *EChar )
     {
-        int i, j , colPosition , ExFlag = 0 , endPosition , row;
+        int i, j, circle, colPosition , ExFlag = 0 , endPosition , row;
         // to know what number of col will go in end
         char ch , *end , *current , *start  , **line ;
 
@@ -156,108 +159,177 @@ char* _LineEditor (int col , int row , int SChar , int EChar ) {
             line[i] = (char*) malloc(size[i]*sizeof(char));
         }
 
-        ///
+        /// For Each line in Form Get Data in Line
 
+        i=0 ;
+        j=0;
+        gotoxy(XPos[0],YPos[0]);
 
+        while(i<c){
+            colPosition     = XPos[i];
+            endPosition     = XPos[i];
+            row             = YPos[i];
 
-        for(i=0 ; i<c ; i++){
             start           = line[i];
             current         = line[i];
             end             = line[i];
 
-            colPosition     = XPos[i];
-            row             = YPos[i];
+            /* [Show How Current Reference to Line]
+            printf("%x \n" , line[0]);
+            printf("%x \n " , line[0][0]);
+            printf("%x \n " , current[0]);
+            */
+
+            j=0 , circle=0;
+
 
             /// To get character by character and store in line of index
-            for(j=0 ; j<size[i] ; j++){
-                gotoxy( colPosition , row);
-                ch = getch();
+                do{
+                    gotoxy( colPosition , row);
 
-                switch(ch){
+                    if (j >= size[i]){
+                            *end = '\0';
+                            ExFlag=1;
+                            break;
+                    }
+                    else ExFlag=0;
 
-                    case Esc:
-                        ExFlag=1;
-                        break;
+                    gotoxy(colPosition , row);
+                    ch = getch();
 
-                    /// ********** Extended Keys  ************
+                    switch(ch){
 
-                    /// press home case
-                    case 71:
-                        current = start;
-                        colPosition = XPos[i] ;
-                        break;
+                        case Esc:
+                            ExFlag=1;
+                            break;
 
-                    /// press end case
-                    case 79:
-                        current = end;
-                        colPosition= endPosition;
-                        break;
+                        /// press Tap
+                        case 9:
+                            ///null terminator
+                                if(j<size[i]){
+                                    *end = '\0';
+                                    ExFlag = 1;
+                                    if(i==c-1){
+                                        circle = 1;
+                                        row = YPos[0];
+                                        current = end;
+                                    }
+                                    break;
+                                }
 
-                    /// press left arrow Case
-                    case 75:
-                        if(current > start){
-                            current--;
-                            colPosition -- ;
-                        }
 
-                        break;
+                            break;
 
-                    /// press right arrow Case
-                    case 77:
-                        if(current < end){
-                            current++;
-                            colPosition ++;
-                        }
 
-                        break;
+                        /// ********** Extended Keys  ************
 
-                    /// press enter
-                    case Enter:
-                        //null terminator
-                        *end = '\0';
-                        ExFlag = 1;
-                        break;
+                        /// press home case
+                        case 71:
+                            current = start;
+                            colPosition = XPos[i] ;
+                            break;
 
-                    default:
-                        if(ch >= SChar[i] && ch <= EChar[i]){
+                        /// press end case
+                        case 79:
+                            current = end;
+                            colPosition= endPosition;
+                            break;
 
-                            *current = ch;
-                            printf("%c",ch);
-                            colPosition++;
-                            current++;
-                            end++;
-                            endPosition ++ ;
-                        }
+                        /// press left arrow Case
+                        case 75:
+                            if(current > start){
+                                current--;
+                                colPosition -- ;
+                            }
 
-                        break;
+                            break;
+
+                        /// press right arrow Case
+                        case 77:
+                            if(current < end){
+                                current++;
+                                colPosition ++;
+                            }
+
+                            break;
+
+                        /// Press Down
+                         case 80:
+                            ///null terminator
+                                if(j<size[i]){
+                                    *end = '\0';
+                                    ExFlag = 1;
+                                    if(i==c-1){
+                                        circle = 1;
+                                        row = YPos[0];
+                                    }
+                                }
+
+                            break;
+
+
+                            /// Press UP
+                            case 72:
+                                *end = '\0';
+                                ExFlag = 1;
+                                printf("%i" ,YPos[c-1]);
+                                if(i==0){
+                                    printf("no");
+                                    row = YPos[c-1];
+                                    colPosition = XPos[c-1];
+                                    gotoxy(colPosition , row);
+                                }else{
+                                    row = YPos[i--];
+                                    colPosition = XPos[i--];
+                                    gotoxy(colPosition , row);
+                                }
+
+                            break;
+
+                        /// press enter
+                        /*case Enter:
+                            //null terminator
+                            *end = '\0';
+                            ExFlag = 1;
+                            break;
+                        */
+                        default:
+                            if(ch >= SChar[i] && ch <= EChar[i]){
+                                *current= ch;
+                                printf("%c",ch);
+
+                                current++;
+                                end++;
+                                colPosition++;
+                                endPosition++ ;
+
+                                j++;
+                            }
+
+
+                            break;
+                    }
+
+            }while(!ExFlag);
+
+                if(circle == 1){
+                    i=0;
                 }
+                else i++;
 
 
-
-
-            }
-            printf("\n");
 
         }
-
-
-        for(i=0 ; i<c ; i++){
-            for(j=0 ; j<size[i] ; j++){
-                printf("\n %s" , line[i][j] );
-            }
-        }
-
-
-
-
-
-
+        return line;
 
     }
+
+
+
     void ShowData(struct Employee *EmpData  , int index)
     {
         system("cls");
-        int i , c=8;
+        int i ,j=0 ,c=8;
         int *SizeOFLines , *XPos , *YPos , *SChar , *EChar ;
         char **Labels;
 
@@ -303,10 +375,12 @@ char* _LineEditor (int col , int row , int SChar , int EChar ) {
         }
 
         // start to print Employee data in col 2
-        for(i=0 ; i<3 ; i++){
-            gotoxy(40, 5 + 3*i);
-            printf("%s : " ,Labels[i] );
-        }
+        gotoxy(40, 5);
+        printf("%s:" ,Labels[5] );
+        gotoxy(40, 8);
+        printf("%s:" ,Labels[6] );
+        gotoxy(40, 11);
+        printf("%s:" ,Labels[7] );
 
         /// End Printing Form Details
 
@@ -371,19 +445,32 @@ char* _LineEditor (int col , int row , int SChar , int EChar ) {
         /// end Drawing Inputs Of Form
 
 
-        LineEditor (c , SizeOFLines ,XPos , YPos ,SChar , EChar );
 
+        char** Data = LineEditor (c , SizeOFLines ,XPos , YPos ,SChar , EChar );
 
+        EmpData[index].ID= atoi(Data[0]);
+
+        strcpy(EmpData[index].Name , Data[1]);
+
+        EmpData[index].Salary   = atoi(Data[2]);
+
+        strcpy(EmpData[index].Adress , Data[3]);
+
+        EmpData[index].Deduct   = atoi(Data[4]);
+        EmpData[index].Age      = atoi(Data[5]);
+        EmpData[index].Overtime = atoi(Data[6]);
+
+        strcpy(EmpData[index].Gender , Data[7]);
 
         /// Free Allocations in heap
 
-        free(Labels);
+        /*free(Labels);
         free(SizeOFLines);
         free(XPos);
         free(YPos);
         free(SChar);
         free(EChar);
-
+        */
 }
 
 
@@ -392,7 +479,7 @@ int main()
 
 
     struct Employee *Emp;
-    int i;
+    int i , j;
     // allocate array of Employee in heap
     Emp = (struct Employee *) malloc(2 * sizeof(struct Employee));
 
@@ -401,7 +488,15 @@ int main()
     }
 
     ShowData(Emp , 0);
+
+
+    printf("hfhhfhfhf \n");
+    printf("%i" , Emp[0].ID);
+
+
     getch();
+
+
 
 
     return 0;

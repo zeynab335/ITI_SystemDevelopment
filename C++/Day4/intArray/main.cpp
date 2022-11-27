@@ -5,7 +5,6 @@ using namespace std;
 class intArray{
 
     int *Arr , Size , ArrLength;
-
     public :
     intArray(int num){
         Size = num;

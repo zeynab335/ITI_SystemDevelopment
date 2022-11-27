@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int* BubbleSortAsc(int *arr , int Size){
+void BubbleSortAsc(int *arr , int Size){
     int index;
     bool isSorted;
 
@@ -14,14 +14,13 @@ int* BubbleSortAsc(int *arr , int Size){
                 isSorted = false;
             }
         }
-        if(isSorted) return 0;
+        if(isSorted) return;
     }
-    return arr;
 }
 
 
 
-int* BubbleSortDesc(int *arr , int Size){
+void BubbleSortDesc(int *arr , int Size){
     int index;
     bool isSorted;
 
@@ -33,9 +32,8 @@ int* BubbleSortDesc(int *arr , int Size){
                 isSorted = false;
             }
         }
-        if(isSorted) return 0;
+        if(isSorted) return;
     }
-    return arr;
 }
 
 int main()

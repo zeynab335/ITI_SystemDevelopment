@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1667471968 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\main.cpp
+1668372668 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\main.cpp
 	<iostream>
 	"Shape.h"
 	"Rectangle.h"
@@ -13,11 +13,11 @@
 	"Shape.h"
 	<iostream>
 
-1667393283 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\rectangle.cpp
+1668370178 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\rectangle.cpp
 	"Rectangle.h"
 	<iostream>
 
-1667389419 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\rectangle.h
+1668370142 h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\rectangle.h
 	"Shape.h"
 
 1667393303 source:h:\iti\githup\iti_systemdevelopment\c++\day6\shapes\square.cpp

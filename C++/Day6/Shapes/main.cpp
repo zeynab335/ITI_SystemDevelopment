@@ -33,9 +33,10 @@ int getShapesArea(Rectangle *R1 , Square *S1 , Circle *C1 , Triangle *T1){
 int getShapesAreaDynaimcSize(Rectangle *R1 , Square *S1 , Circle *C1 , Triangle *T1 , int R_Size , int S_Size , int C_Size , int T_Size){
     int sum = 0;
 
+
     cout  << "\n\nStart Showing each area of shapes \n\n";
     for(int i=0 ; i<R_Size ; i++)
-        sum += R1[i]    .CalcArea();
+        sum += R1[i].CalcArea();
 
     for(int i=0 ; i<S_Size ; i++)
         sum += S1[i].CalcArea() ;
@@ -94,7 +95,8 @@ int main()
 
 
     /// another style to initialize array of objects
-    Square    S_Arr[2] = {Square(10,10) , Square(20,20)};
+    //Square    S_Arr[2] = {Square(10,10) , Square(20,20)};
+    Square    *S_Arr   = new Square[2]{Square(10,10) , Square(20,20)};
     Triangle  T_Arr[2] = {Triangle(10,20) , Triangle(10,20)};
     Circle    C_Arr[2] = {Circle(10,10) , Circle(10,10)};
 

@@ -141,6 +141,7 @@ class Picture_V1{
     public:
         Picture_V1(){ cout << "cons Picture_V1 \n" ;}
         Picture_V1(Rect *R1 , Circle *C1 , Triangle *T1 , Line *L1 , int SLines , int SCircles){
+            cout << "cons Picture_V1 \n" ;
             R = R1;
             T = T1;
 

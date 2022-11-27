@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1667386972 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\main.cpp
+1668289718 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\main.cpp
 	<iostream>
 	"G:\ProgramSetup\CodeBlocks\MinGW\include\graphics.h"
 	<conio.h>
@@ -13,7 +13,7 @@
 
 1667322199 h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\point.h
 
-1667340766 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\point.cpp
+1668371211 source:h:\iti\githup\iti_systemdevelopment\c++\day5\tasks\lightroom_using_relation_in_oop\point.cpp
 	<iostream>
 	"Point.h"
 

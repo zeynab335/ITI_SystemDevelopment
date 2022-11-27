@@ -34,7 +34,8 @@ class BaseChild:public Base{
         int c;
 
         BaseChild(int A , int B , int C , int X, int Y , int Z):
-        Base(X,Y,Z){a=A ; b=B ; z=Z;}
+        Base(X,Y,Z){
+            a=A ; b=B ; z=Z;}
 
         BaseChild(){a=0 ; b=0 ; c=0 ;cout << "BaseChild Cons \n" ;}
         ~BaseChild(){cout << "BaseChild Des \n" ;}

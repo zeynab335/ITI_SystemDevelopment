@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <conio.h>
 
+
+void sum(){
+    printf("hello");
+    if(9>2)return;
+}
+
 int main()
 {
     // Print Ascii of Extended Keys

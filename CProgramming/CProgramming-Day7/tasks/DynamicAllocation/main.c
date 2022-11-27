@@ -81,7 +81,7 @@ void printLine(int col , int row , int size){
 
         i=0 ;
         j=0;
-        gotoxy(XPos[0],YPos[0]);
+        gotoxy(colPosition,YPos[0]);
 
         while(i<c && !ExFlag2){
 
@@ -94,21 +94,13 @@ void printLine(int col , int row , int size){
             end             = line[i];
 
             j=0 , circle=0;
-
+            current = end;
 
             /// To get character by character and store in line of index
                 do{
-                    gotoxy( colPosition , row);
+                    gotoxy(colPosition , row);
                     ExFlag=0;
                     ExFlag2 = 0;
-                    /*if (j >= size[i]){
-                            *end = '\0';
-                            ExFlag=1;
-                            break;
-                    }
-                    else ExFlag=0;
-                    */
-
                     ch = getch();
 
                     switch(ch){
@@ -191,12 +183,6 @@ void printLine(int col , int row , int size){
                                 *end = '\0';
                                 ExFlag = 1;
                                 i--;i--;
-                                /*if(i!=0){
-                                    *end = '\0';
-                                    ExFlag = 1;
-                                    i--;
-                                }
-                                */
 
                             break;
 
@@ -474,6 +460,9 @@ void ViewEmployeeDetails(struct Employee *EmpData){
 
             printf("Employee ID is : %i \n" ,  EmpData[j].ID );
             printf("Employee Name is : %s \n" , EmpData[j].Name );
+            printf("Employee Salary is : %lf \n" , EmpData[j].Salary );
+            printf("Employee Age is : %i \n" , EmpData[j].Age );
+
 
 
             double NetSalary = EmpData[j].Salary + EmpData[j].Overtime - EmpData[j].Deduct ;

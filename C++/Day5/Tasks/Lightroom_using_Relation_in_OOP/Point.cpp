@@ -10,7 +10,10 @@ Point::Point(){
 /// OverLoading Cons
 Point::Point(int x_ , int y_){
     x = x_ ; y = y_ ;
+    std::cout << "Point Cons \n" ;
+
 }
+
 
 Point::~Point(){}
 /// end cons and destructor

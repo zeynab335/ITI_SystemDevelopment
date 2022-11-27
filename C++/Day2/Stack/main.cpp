@@ -88,6 +88,8 @@ int main()
     cout << s1.Pop() << endl;
     cout << s1.Peek() << endl;
     cout << s1.Pop() << endl;
+    cout << s1.Pop() << endl;
+    cout << s1.Pop() << endl;
 
 
 

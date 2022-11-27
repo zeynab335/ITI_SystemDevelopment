@@ -6,7 +6,7 @@ class Rectangle:public Shape
 {
     public:
         Rectangle();
-        Rectangle(int d1 ,int d2):Shape(d1,d2){}
+        Rectangle(int d1 ,int d2);
         virtual ~Rectangle();
         double CalcArea();
 

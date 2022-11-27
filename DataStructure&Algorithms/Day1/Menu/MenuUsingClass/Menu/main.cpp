@@ -68,6 +68,7 @@ class LinkedList{
         char PrintData[6][10] = { {"ID"} , {"Name"} , {"Salary"} , {"Address" } , {"Deduct"} };
         char PrintDataSecCol[3][10] = { {"Age"} , {"Overtime"},  {"Gender"}  };
 
+            Employee *EmpData = AddNode();
 
         for(j=0 ; j<1 ; j++){
             gotoxy(10,1);
@@ -85,14 +86,8 @@ class LinkedList{
                 printf("%s : " ,PrintDataSecCol[i] );
             }
 
-             Employee *EmpData = AddNode();
 
-            if(pLast==NULL) pLast = pStart = EmpData;
-            else{
-                pLast->pNext = EmpData;
-                EmpData->pPrev = pLast;
-                pLast = EmpData;
-            }
+
 
             gotoxy(15,5);
             scanf("%i" , &EmpData->ID);
@@ -113,9 +108,36 @@ class LinkedList{
             gotoxy(55,11);
             scanf("%c", &EmpData->Gender);
 
-            system("cls");
 
+            if(pLast==NULL) pLast = pStart = EmpData;
+            else{
+                /// inserted in sorted way
+                // if there is one node
+                if(pStart == pLast && (EmpData->ID < pLast->ID) ){
+                    pStart->pPrev = EmpData;
+                    pStart = EmpData;
+                    EmpData->pNext = pLast;
+                }
+
+                /// if EmpData-> ID between pLast and previous of pLast
+                else if(EmpData->ID < pLast->ID && EmpData->ID > pLast->pPrev->ID  ){
+                   printf("go here");
+                    pLast->pPrev->pNext = EmpData;
+                    EmpData->pPrev = pLast->pPrev;
+                    EmpData->pNext = pLast;
+
+                }
+
+                else{
+                    pLast->pNext = EmpData;
+                    EmpData->pPrev = pLast;
+                    pLast = EmpData;
+                }
+
+            }
         }
+                    system("cls");
+
     }
 
 
@@ -125,6 +147,7 @@ void DisplayAll(){
     int j=0;
     Employee *PDisplay = pStart ;
 
+    if(PDisplay == NULL) printf("Employee Not Found \n");
     while(PDisplay != NULL){
         printf("Employee %i ID is : %i \n" , j+1 , PDisplay->ID );
 
