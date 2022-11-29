@@ -1,70 +1,47 @@
-//? Task2 Point 2.1 in Day2
+//? Task2 Point 3.1 in Day2
+/*
+    * Enter the value of a circle’s radius in order to calculate its area as shown in fig
+    * Enter another value to calculate its square root and alert the result as shown in fi
+    * Enter another the value to calculate its cos value then display the output as shown in Fig
+*/
 
-//&  SortAsc Funciton
-function DisplayElement(...Elements) {
-    
-    document.write(
-        "<p class='red'> u've entered the Values of  </p> " 
-        + 
-        Elements.join(' , ')
-        + "<br>" 
-    )    
-    
+
+//& Calculate Square Root Function
+function CalcSquareRoot(sqrRoot){
+    alert(`Square Root of ${sqrRoot} is ${Math.sqrt(sqrRoot)}`) ;
 }
 
-//& compare fun => used to parse it to fix when sorting using unicode
-function Compare(num1 , num2){
-    if(num1>num2) {return 1;}
-    else if(num1<num2) {return -1;}
-    else {return 0;}
+//& Calculate Circle's Area Function
+function CalcCircleArea(Radius){
+    var Area = Math.PI * Math.pow(Radius,2);
+    alert( "Total area of the circle is " + Area);
 }
 
-function CompareInDesc(num1 , num2) {return num2-num1;}
-
-//&  Sort Funciton
-//? if Sort in Asc ==> will send True as Argument
-//? if Sort in Desc ==> will send False as Argument
-
-function Sort(SortAsc,...Elements ) {
-    var SortedElements = SortAsc 
-        //* Sorted Elements in Asc Way
-        ? Elements.sort(Compare).join(' , ') 
-        //* Sorted Elements in Desc Way
-        : Elements.sort(CompareInDesc).join(' , ')
-    
-    document.write(
-        `<p class='red'> u've values being sorted  
-            ${ SortAsc ? 'Ascending' : 'Descending' }
-        </p> `
-        + 
-        SortedElements
-        + "<br>"
-    )    
-    
+//& Calculate Cons Function
+function CalcCos(Degree){
+    //* Equasion ==>  ( x * pi ) / 180
+    return Math.cos(( Degree * Math.PI ) / 180).toFixed(4) ;
 }
 
 
 //&  GetElements Funciton
 function GetElements(){
 
-    //* Array of Elements
-    var Elements = [];
-    for(var i=0 ; i<5 ; i++){
-        Elements[i] = parseInt(prompt(`Enter Element => ${i+1}`));
-    }
-
-    //* invoke DisplayElement Function
-    DisplayElement(...Elements);
+    var Radius = parseInt(prompt("What is the value of Circles radius"));  
     
-    //* invoke Sort Array in Desc Way Function
-    //? first Argument => check Desc 
-    Sort(false , ...Elements);
+    //* invoke CalcCircleArea Function
+    CalcCircleArea(Radius);
+    
+    var SquareRoot = parseInt(prompt("What is the value you want to calculate its square root"));
 
-    //* invoke Sort Array in Asc Way Function
-    //? first Argument => check Desc 
-    Sort(true , ...Elements);
+    //* invoke CalcSquareRoot Function
+    CalcSquareRoot(SquareRoot);
 
+    var Degree = parseInt(prompt("What is the Angle you want to calculate its cons"));
 
+    //* invoke CalcCos Function
+    var ConsDegree = CalcCos(Degree);
+    document.write( "Cos " + Degree + "°" + " is " + ConsDegree );    
 };
-GetElements()
+GetElements();
 
