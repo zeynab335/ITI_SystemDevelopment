@@ -1,53 +1,14 @@
-// Task1 in Day2
+//? Task 1 Point 1.2 in Day2
 
-
-function CountStringCharacters(){
-    var stringFromUsr = prompt("Enter Your string");
-    var confirmDiffCharacter = confirm("Case Sensitive or not");
-    var Expression =  prompt("Enter Your Character");
-    
-    var strLen = 0;
-    if(!confirmDiffCharacter){
-        /// case inSesitive
-        var regEx = new RegExp(Expression , 'i');
-        
-        for(var i in stringFromUsr){
-            if(stringFromUsr[i].match(regEx)){
-                strLen++;
-            }
-        }
-        
-        document.write("length = " + strLen);
-
-    }
-    else {
-        /// case Sensitive
-        var regEx = new RegExp(Expression);
-        
-        for(var i in stringFromUsr){
-            if(stringFromUsr[i].match(regEx)){
-                strLen++;
-            }
-        }
-        
-        document.write("length = " + strLen);
-       
-
-    }
-}
-
-//CountStringCharacters();
-
-
+//& palindromeFun Function
 function palindromeFun() {
     var originStr = prompt("palindrome ");
     var strArr = originStr.split(" ");
 
     var caseOption = confirm("Case Sensitive or not");
     
+    //* Case SEnsitive
     if(caseOption){
-    
-
         for(var i=0 ; i<strArr.length ; i++){
             var str = strArr[i];
             var ReverseArr = str.split("").reverse();
@@ -63,7 +24,7 @@ function palindromeFun() {
         
     }
     else {
-
+        //* Case inSEnsitive
         for(var i=0 ; i<strArr.length ; i++){
             var str = strArr[i];
             var ReverseArr = str.split("").reverse();
@@ -122,17 +83,5 @@ getLargestLength("this is javascript a string demo");
 
 
 
-// Task 1.4  
-/*
-    * get from user Name , PhoneNum , MobileNum , Email
-    * validates and displays it with a welcoming message in console
-    * Name => should be characters and not a number
-    * PhoneNum => should be a number , with length = 8
-    * MobileNum => should be numbers , with length = 11
-    *   plus MobileNum starts with (010 | 011 | 012)
-    * Email => abc@123.com
-    * use can use choice either red , blue , green
-    
-*/
 
 
