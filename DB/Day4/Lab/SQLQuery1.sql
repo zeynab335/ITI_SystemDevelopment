@@ -12,6 +12,8 @@ where D.Sex = 'M'
 
 
 
+
+
 --- 2.	For each project, list the project name and the total hours per week (for all employees) spent on that project
 
 select P.Pname , sum(Hours*7)
@@ -32,6 +34,13 @@ select D.*
 from Employee E , Departments D
 where (Dno = Dnum) and SSN = (select min(SSN) from Employee) 
 
+
+select D.*	
+from Employee E , Departments D
+
+select D.* 
+from Employee E full outer join Departments D
+on (Dno = Dnum) 
 
 -- 4.	For each department, retrieve the department name and the maximum, minimum and average salary of its employees.
 select D.Dname , max(E.Salary) as [Max Salary] , min(E.Salary)  as [Min Salary] , avg(isnull(E.Salary , 0))  as [Avg Salary]
