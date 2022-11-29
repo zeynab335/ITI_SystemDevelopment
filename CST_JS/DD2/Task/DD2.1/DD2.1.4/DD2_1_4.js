@@ -1,4 +1,5 @@
-//? Task 1.4  
+//? Task 1 Point 1.4 in Day2
+
 /*
     * get from user Name , PhoneNum , MobileNum , Email
     * validates and displays it with a welcoming message in console
