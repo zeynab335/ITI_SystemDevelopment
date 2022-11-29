@@ -33,9 +33,8 @@ function Validation(Name , PhoneNum , MobileNum , Email){
     // start Decleration 
     
     //* Regular Exp
-    var NameRegExp       = /^[a-zA-Z]+$/;            
     var PhoneRegExp      = /^[0-9]{8}$/ ;
-    var MobileRegExp     = /^011|010|012+[0-9]{8}$/ ;
+    var MobileRegExp     = /^011|010|012*[0-9]{8}$/ ;
     
     //* format of Regular Exp ==> "z.auc@gmai.com"
     var EmailRegExp1     = /^\w+[\+\.\w-]*@[a-zA-Z]+(\.)+[a-zA-Z]{2,4}$/ ;
@@ -52,7 +51,7 @@ function Validation(Name , PhoneNum , MobileNum , Email){
     } ;
     
 
-    var isNameValid      = NameRegExp.test(Name);
+    var isNameValid      = typeof(Name)==='string';
     var isPhoneNumValid  = isFinite(PhoneNum) && (PhoneRegExp.test(PhoneNum)) ;    
     var isMobileNum      = isFinite(MobileNum) && (MobileRegExp.test(MobileNum)) ;
     var isEmailVaild     = EmailRegExp2.test(Email);
@@ -99,15 +98,13 @@ function Register(){
     else {
         //! display message to user to inform about validation in screen 
         document.write(
-            `<p class="red"> Please Enter Valid Data, Try Again </p><br>`
+            `<p class="red"> Please Enter Valid Data, Try Again </p>`
         )
         //* display message to user to inform about validation in screen 
         for(var ele in Data){
-            if(!!Data[ele]){
-                document.write(
-                    `<p class="red"> ${Data[ele]} </p><br>`
-                )
-            }
+            document.write(
+                `<p class="red"> ${Data[ele]} </p><br>`
+            )
         }
 
     }

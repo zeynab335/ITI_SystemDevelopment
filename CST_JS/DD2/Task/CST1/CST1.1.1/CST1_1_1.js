@@ -30,5 +30,3 @@ function CountStringCharacters(){
 }
 
 CountStringCharacters();
-
-
