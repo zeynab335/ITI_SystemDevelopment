@@ -33,7 +33,7 @@ function Validation(Name , PhoneNum , MobileNum , Email){
     // start Decleration 
     
     //* Regular Exp
-    var NameRegExp       = /^[\w+]$/;            
+    var NameRegExp       = /^[a-zA-Z]+$/;            
     var PhoneRegExp      = /^[0-9]{8}$/ ;
     var MobileRegExp     = /^011|010|012+[0-9]{8}$/ ;
     
