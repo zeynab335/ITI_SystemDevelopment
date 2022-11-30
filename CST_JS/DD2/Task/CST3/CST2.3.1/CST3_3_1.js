@@ -27,17 +27,17 @@ function CalcCos(Degree){
 //&  GetElements Funciton
 function GetElements(){
 
-    var Radius = parseInt(prompt("What is the value of Circles radius"));  
+    var Radius = parseInt(prompt("What is the value of Circles radius","types raduis here"));  
     
     //* invoke CalcCircleArea Function
     CalcCircleArea(Radius);
     
-    var SquareRoot = parseInt(prompt("What is the value you want to calculate its square root"));
+    var SquareRoot = parseInt(prompt("What is the value you want to calculate its square root","types your value here"));
 
     //* invoke CalcSquareRoot Function
     CalcSquareRoot(SquareRoot);
 
-    var Degree = parseInt(prompt("What is the Angle you want to calculate its cons"));
+    var Degree = parseInt(prompt("What is the Angle you want to calculate its cons","types your value here"));
 
     //* invoke CalcCos Function
     var ConsDegree = CalcCos(Degree);
