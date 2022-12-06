@@ -37,6 +37,7 @@ function FlyingWindow() {
         FlyWin.resizeTo(300,150);
 
         //? check if ChildWindow Reach in the end of Parent Page => if yes [will decrease pos of child]
+        //* enter when change = 0
         if((!change) && ((ParentWindowWidth>XPos) || (ParentWindowHeight > YPos)) )
         {   
             change = 0;  
@@ -47,6 +48,7 @@ function FlyingWindow() {
             FlyWin.moveBy(XPos,YPos);
         }
         else{
+            //* enter when XPos > 0 && YPos > 0 
             if(XPos>0 && YPos>0 ){
                 change=1;
                 XPos -= 50;
@@ -54,6 +56,7 @@ function FlyingWindow() {
                 FlyWin.focus();
                 FlyWin.moveBy(-XPos,-YPos);
             }
+            //* change [in this case use change to go to case 2 ]
             else{
                 XPos = 0;
                 YPos = 0;
