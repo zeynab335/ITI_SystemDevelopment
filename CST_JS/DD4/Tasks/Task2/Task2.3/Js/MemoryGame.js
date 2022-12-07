@@ -57,7 +57,7 @@ var MatchedCardsIndex = 0
                     SelectedCards[1] = this.firstChild;
                     this.firstChild.style.opacity = 1;
 
-                    setTimeout(FlipCards , 500) ;
+                    setTimeout(FlipCards , 400) ;
 
                 }
                 //? in this case user can't select any cards
