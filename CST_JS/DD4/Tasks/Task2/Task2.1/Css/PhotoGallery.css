@@ -1,0 +1,33 @@
+.GalleyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+
+}
+
+.GalleyBtns{
+    margin-bottom: 20px;
+}
+.GalleyBtns > button{
+    background-color: var(--MainColor);
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    margin-left: 5px;
+}
+.GalleyBtns > button:hover{
+    background-color: #333;
+    color: white;
+}
+
+.imgContainer > img{
+    width: 400px!important;
+    height: 300px!important;
+    border-radius: 10px;
+}
+
+

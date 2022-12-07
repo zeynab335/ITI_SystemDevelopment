@@ -1,0 +1,16 @@
+:root{
+    --MainColor : #52BD8F;
+}
+
+body{
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+.Header{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.Header > h1{
+    color: var(--MainColor)
+}

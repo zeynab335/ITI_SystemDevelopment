@@ -1,0 +1,45 @@
+.MemoryGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.Container{
+    min-height: 60vh;
+    background: white;
+    width: 50%;
+    float: left;
+    border-radius: 10px;
+}
+
+
+.flippingCard{
+    background-image: url('../Images/Moon.gif');
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+
+}
+
+.flippingCard img{
+    opacity: 0;
+}
+
+.FinishGame{
+    color: darkred;
+}
+
+.PlayAgain{
+    border: 0;
+    opacity: 0;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    background-color: #52BD8F;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

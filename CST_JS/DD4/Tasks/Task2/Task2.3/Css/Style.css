@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+.Header{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.Header > h1{
+    color: #52BD8F;
+}
