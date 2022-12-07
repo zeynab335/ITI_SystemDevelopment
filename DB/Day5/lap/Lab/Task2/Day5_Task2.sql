@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 use AdventureWorks2012;
 
 -- 1.	Display the SalesOrderID, ShipDate of the SalesOrderHeader table (Sales schema) to show SalesOrders
