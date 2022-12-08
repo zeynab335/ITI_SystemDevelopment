@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <!-- * Common Styles  -->
+    <link rel="stylesheet" href="../Css/Style.css"  />
+    <!--* Specific Styles -->
+    <link rel="stylesheet" href="../Css/Register.css"  />
 </head>
 <body>
+
+    <div class="Header">
+        <h1> Registeration </h1>
+        <p> Please Enter Your Information.. </p>        
+    </div>
     
+    
+    <div class="Register">
+        <div class="FormContainer">
+            <!--* Name -->
+            <div >
+                <label for="usrName"> Enter Your Name : </label>
+                <input type="text" id="usrName" />
+            </div>
+
+            <!--* Age -->
+            <div >
+                <label for="Age">  Enter Your Age : </label>
+                <input type="number" id="Age" required/>
+            </div>
+
+            <!--* gender -->
+            <div class="Gender">
+                <label> Select Your Gender: </label>
+                <div class="GenderTypes" id="GenderTypes">
+                    <img src="../images/1.jpg" alt="Male" id="Male"/>
+                    <img src="../images/2.jpg" alt="Female" id="Female"/> 
+                </div>
+            </div>
+
+            <!--* Fav Color -->
+            <div class="FavColor">
+                <label> Select Your Favourite Color: </label>
+                <select id="FavColorDropBox">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+    
+                </select>
+            </div>
+          
+
+            <!-- * Submit Button -->
+            <input type="submit" value="Submit" id="btnSubmit" class="btnSubmit"/> 
+        </div>
+    </div>
+
+    <!--* Scripts -->
+    <script src="../JS/allCookieList.js"></script>
+    <script src="../JS/Register.js"></script>
+
 </body>
 </html>
