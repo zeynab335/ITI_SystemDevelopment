@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(23, 19, 19);
+    color: white;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+/*
+#header{
+    align-self: flex-end;
+}
+*/
