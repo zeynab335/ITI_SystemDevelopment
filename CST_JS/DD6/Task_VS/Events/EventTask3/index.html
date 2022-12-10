@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!--* Specific Styles -->
+    <link rel="stylesheet" href="index.css"  />
+
+</head>
+<body>
+
+    <div class="Header">
+        <h1> Registeration </h1>
+        <p> Please Enter Your Information.. </p>  
+        <!-- * show Time Out when user not  -->
+        <div id="TimeOut"> </div>
+
+    </div>
+   
+    <!-- * get From user his info (address, gender, email, mobile)  -->
+    <div class="Register">
+        <!-- & start Register Form  -->
+        <Form class="FormContainer"  name ="RegisterForm" action="./WelcomePage.html">
+            <!--* email -->
+            <div>
+                <label> Email </label>
+                <input type="text" name="email" id="email" />
+                <p class="Error" id="EmailError"></p>
+            </div>
+            
+            <!--* mobile -->
+              <div>
+                <label> Mobile </label>
+                <input type="number" name="mobile" id="mobile" required/>
+                <p class="Error" id="MobileError" ></p>
+            </div>
+        
+            <!--* gender -->
+            <div>
+                <label> Gender </label>
+                <input type="radio" name="gender" id="gender" value="Male" required/>
+                <span>Male</span>
+
+                <input type="radio" name="gender" id="gender" value="Female" required/>
+                <span>Female</span>
+                <p class="Error" id="genderError"></p>
+            </div>
+
+             <!--* Address -->
+             <div class="AddressGroup">
+                <label> Address </label>
+                <textarea name="address" cols="2"  required ></textarea>
+            </div>
+        
+            <!-- ? check if Form is valid before go to welcome page -->
+            <p class="Error" id="isFormValid"> </p>
+           
+
+            <!-- * Submit Button -->
+            <input type="submit" value="Submit" class="btnSubmit"/> 
+        
+        </Form>
+        <!-- & end Register Form  -->
+
+    </div>
+       
+    <script src="./index.js"></script>
+</body>
+</html>
