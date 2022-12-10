@@ -1,27 +1,39 @@
 <html>
 
 <head>
-   <link href="../CSS/DOM.css" rel="stylesheet"/>
+   <link href="../CSS/CardGenerator.css" rel="stylesheet"/>
+   <title> Card Generator </title>
 </head>
 
 <body>
-    <div class="center">
-        <div id="header">
-            <img src="../Images/dom.jpg" alt="hello..it rains over here:)" />
+      <!-- * Card Header -->
+      <div class="CardHeader">
+        <h1> Generate Get Well Soon Card</h1>
+    </div>
+
+
+
+    <div class="CardMarker">
+      
+        <!-- * Card Images -->
+        <div class="CardContainer">
+            <div id="CardGroup1" class="CardGroup"></div>
+            <div id="CardGroup2" class="CardGroup"></div>
         </div>
-        <div id="navigation">
-            <ul id="nav">
-                <li><strong>Memo</strong></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+        <!-- * Personal Message -->
+        <div class="Message">
+            <h2> Personal Message</h2>
+           <textarea class="MessageText" id="MessageText"></textarea>
+           <input type="submit" value="Generate" class="btnGenerate" id="btnGenerate"/>
+
         </div>
 
     </div>
-    <script src="../JS/DOM.js"></script>
+    <script src="../JS/allCookieList.js"></script>
+    <script src="../JS/GenerateCardIMG.js"></script>
+    <script src="../JS/CardGenerator.js"></script>
+
 </body>
 
 

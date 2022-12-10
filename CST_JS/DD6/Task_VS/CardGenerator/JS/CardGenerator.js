@@ -1,15 +1,21 @@
+
 //* access image 
-var header = document.getElementById('header');
+var btnGenerate = document.getElementById('btnGenerate')
 
-//* change position of first image
-header.style.alignSelf = 'flex-end';
+btnGenerate.onclick = function(){
+    var CardImages = document.querySelectorAll('.CardImages')
+    for ( i=0; i < CardImages.length ; i++) {
+        if(CardImages[i].childNodes[1].checked){
+            var image = CardImages[i].childNodes[0].firstChild;
+            setCookie("cardImgSrc",image.src);
 
+        }
+    }
+    var MessageText = document.getElementById('MessageText');
+    setCookie("cardMessage",MessageText.value);
 
-//* Add New img and set it in the end
-var NewImg =  document.createElement('img');
-var ImgStyle = 'position:absloute;bottom:0px;left:0px'
+    window.open('./Card.html');
 
-NewImg.setAttribute('src','../Images/dom.jpg');
-NewImg.setAttribute('style',ImgStyle);
+    
+}
 
-document.body.append(NewImg)
