@@ -12,17 +12,22 @@
 <body>
 
     <div class="Header">
+        <!-- * Confirmation MEssgae when user submit  -->
+        <div id="ConfirmationMsg"></div>
+
         <h1> Registeration </h1>
         <p> Please Enter Your Information.. </p>  
-        <!-- * show Time Out when user not  -->
+        <!-- * show Time Out when user was not entered his data -->
         <div id="TimeOut"> </div>
+
+        
 
     </div>
    
     <!-- * get From user his info (address, gender, email, mobile)  -->
     <div class="Register">
         <!-- & start Register Form  -->
-        <Form class="FormContainer"  name ="RegisterForm" action="./WelcomePage.html">
+        <Form class="FormContainer" >
             <!--* email -->
             <div>
                 <label> Email </label>
@@ -33,17 +38,17 @@
             <!--* mobile -->
               <div>
                 <label> Mobile </label>
-                <input type="number" name="mobile" id="mobile" required/>
+                <input type="number" name="mobile" id="mobile"/>
                 <p class="Error" id="MobileError" ></p>
             </div>
         
             <!--* gender -->
             <div>
                 <label> Gender </label>
-                <input type="radio" name="gender" id="gender" value="Male" required/>
+                <input type="radio" name="gender" id="gender" value="Male" />
                 <span>Male</span>
 
-                <input type="radio" name="gender" id="gender" value="Female" required/>
+                <input type="radio" name="gender" id="gender" value="Female" />
                 <span>Female</span>
                 <p class="Error" id="genderError"></p>
             </div>
@@ -51,7 +56,7 @@
              <!--* Address -->
              <div class="AddressGroup">
                 <label> Address </label>
-                <textarea name="address" cols="2"  required ></textarea>
+                <textarea name="address" cols="2"  ></textarea>
             </div>
         
             <!-- ? check if Form is valid before go to welcome page -->
@@ -59,7 +64,7 @@
            
 
             <!-- * Submit Button -->
-            <input type="submit" value="Submit" class="btnSubmit"/> 
+            <input type="button" value="Submit" class="btnSubmit"/> 
         
         </Form>
         <!-- & end Register Form  -->

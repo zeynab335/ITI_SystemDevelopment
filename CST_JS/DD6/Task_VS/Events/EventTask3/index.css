@@ -4,10 +4,11 @@
 body{
     background-color: rgb(28, 28, 28);
     color: white;
+    padding: 0;
+    margin: 0;
 }
 .Header{
     text-align: center;
-    margin-top: 2%;
 }
 
 .Header > h1{
@@ -19,7 +20,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .Register .FormContainer{
@@ -75,6 +76,10 @@ input,textarea{
     color: white;
 }
 
-.Error{
+.Error , #TimeOut{
     color: #FD3319;
+}
+
+#ConfirmationMsg{
+    padding: 10px;
 }
