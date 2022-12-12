@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	
+	<xs:element name="family">
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element ref="grandfather"/>
+			</xs:sequence>
+			
+			<!-- define attribute -->
+			<xs:attribute name="name" type="xs:string"/>
+		</xs:complexType>
+	
+	</xs:element>	
+	
+	
+	<xs:element name="grandfather">
+		<xs:complexType mixed="true">
+			<xs:all>
+				<!-- Define father Ref -->	
+				<xs:element ref="father"/>
+				<!-- Define aunt Ref -->	
+				<xs:element ref="aunt"/>
+				
+				<!-- Define uncle Element -->
+				<xs:element name="uncle" minOccurs = "0" maxOccurs="unbounded"></xs:element>
+
+			</xs:all>
+			
+		</xs:complexType>
+		
+	</xs:element>
+	
+	<!-- **************************************** -->
+
+	<!-- Start Defination of Father elements -->
+	
+		<!-- Define father Element -->
+		<xs:element name="father">
+			<xs:complexType mixed="true">
+				<xs:all>
+					<!--  Define Refs of elements -->
+					<xs:element ref="mother"/>
+					<xs:element ref="daughter"/>
+					<xs:element ref="son"/>
+				</xs:all>
+				
+				<!-- Define Attribute in father element -->
+				<xs:attribute name="job" type="xs:string"/>
+			</xs:complexType>
+			
+		</xs:element>
+		
+		<!-- Define Mother Element [Empty Element ] -->
+		<xs:element name="mother">
+			<xs:complexType>
+				<xs:complexContent>
+					<xs:restriction base="xs:anyType">
+						<!-- Define Attribute in father Mother -->
+						<xs:attribute name="name" type="xs:string"/>
+						
+					</xs:restriction>
+					
+				</xs:complexContent>
+				
+				
+			</xs:complexType>
+			
+			
+	
+			
+		</xs:element>
+	
+		<!-- Define daughter Element -->
+		<xs:element name="daughter">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:string">
+						<!-- Define Attribute in father element -->
+						<xs:attribute name="job" type="xs:string"/>
+						<xs:attribute name="age" type="xs:string"/>
+					</xs:extension>
+					
+				</xs:simpleContent>
+				
+			</xs:complexType>
+			
+		</xs:element>
+	
+		<!-- Define daughter Element -->
+		<xs:element name="son">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:string">
+						<!-- Define Attribute in father element -->
+						<xs:attribute name="sport" type="xs:string"/>
+						<xs:attribute name="age" type="xs:int"/>
+					</xs:extension>
+					
+				</xs:simpleContent>
+				
+			</xs:complexType>
+			
+		</xs:element>
+		
+	<!-- end Defination of Father elements  -->
+	
+	
+	<!-- **************************************** -->
+	
+
+	<!-- Start Defination of rest elements of grandfather  -->
+		
+	<!-- Define aunt Element -->
+	<xs:element name="aunt">
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:string">
+						<!-- Define Attribute in father element -->
+						<xs:attribute name="sons" type="xs:int"/>
+					</xs:extension>
+					
+				</xs:simpleContent>
+				
+			</xs:complexType>
+			
+		</xs:element>
+		
+	<!-- end Defination of rest elements of grandfather -->
+
+
+
+
+
+
+</xs:schema>

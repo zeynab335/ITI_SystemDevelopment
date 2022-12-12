@@ -111,7 +111,7 @@ function MovingPics(){
         //* Moving Top
         MovingPicBottom();
 
-    },500)
+    },50)
 }
 
 var stopMovingFlag = 0;
@@ -122,7 +122,7 @@ MovingPics();
 document.getElementById('Stop').onclick =  function (){
 
     if(this.getAttribute('class')!=='active'){
-        MovingPics(CurrentPos_Icon1,CurrentPos_Icon2,CurrentPos_Top);
+        MovingPics();
         this.classList.toggle('active')
     }
     else{
@@ -134,17 +134,26 @@ document.getElementById('Stop').onclick =  function (){
 
 //* Reset button [start pos from original]
 document.getElementById('Reset').onclick =  function (){
-    clearInterval(Timer);
     var btnStop = document.getElementById('Stop')
-
-    if(!btnStop.classList.contains('active')){
-    btnStop.setAttribute('class','active')
-   }
-
     CurrentPos_Icon1 = OriginalPos_Icon1
     CurrentPos_Icon2 = OriginalPos_Icon2
     CurrentPos_Top = OriginalPos_TOP
-    flgTop = 1
-    MovingPics();
+    flgTop = 1,flgIcon2=0;flgIcon1=0
+
+    console.log(btnStop.classList.contains('active'))
+
+    if(!btnStop.classList.contains('active')){
+      btnStop.setAttribute('class','active');
+      MovingPics();
+
+    }
+    else{
+        clearInterval(Timer);
+        MovingPics();
+    }
+   
+
+    
+
 }
 

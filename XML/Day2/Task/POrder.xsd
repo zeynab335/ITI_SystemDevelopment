@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	
+	<xs:element name="purchaseOrder">
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element name="shipTo" type="ElementTypes"/>
+				<xs:element name="billTo" type="ElementTypes"/>
+				<xs:element name="comment" type="xs:string"/>
+				<xs:element ref="items"/>
+
+			</xs:sequence>
+			
+			<!-- define orderDate attribute -->
+			<xs:attribute name="orderDate" type="xs:string"/>
+		</xs:complexType>
+	
+	</xs:element>	
+	
+
+	
+	<!-- **************************************** -->
+
+	<!-- Start Defination of ElementTypes elements -->
+	
+		<xs:complexType name="ElementTypes">
+			<xs:sequence>
+				<xs:element name="name" />
+				<xs:element name="street" />
+				<xs:element name="city" />
+				<xs:element name="state" />
+				<xs:element name="zip" />
+
+			</xs:sequence>
+			
+			<!-- Define Country Attribute -->
+			<xs:attribute name="country" type="xs:string"></xs:attribute>
+		</xs:complexType>
+		
+	<!-- end Defination of ElementTypes elements  -->
+	
+	
+	<!-- **************************************** -->
+	
+	<!-- Define item Element -->
+	<xs:element name="items">
+		<xs:complexType mixed="true">
+			<xs:all>
+				<xs:element name="item" type="itemType" minOccurs="2" maxOccurs="unbounded"/>
+			</xs:all>
+		</xs:complexType>
+			
+	</xs:element>
+		
+
+	<!-- Define item Element -->
+		<xs:complexType name="itemType">
+			<xs:all>
+				<xs:element name="productName" type="xs:string"/>
+				<xs:element name="quantity" type="xs:int"/>
+				<xs:element name="USPrice" type="xs:decimal"/>
+				<xs:element name="shipDate" type="xs:string" minOccurs="0" />
+				<xs:element name="comment" type="xs:string" minOccurs="0"/>
+			</xs:all>
+			
+			<!-- define orderDate attribute -->
+			<xs:attribute name="partNum">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="(\d)+-(\w)+" />
+					</xs:restriction>			
+				</xs:simpleType>
+			</xs:attribute>
+		
+		</xs:complexType>
+			
+
+
+
+
+
+
+</xs:schema>
