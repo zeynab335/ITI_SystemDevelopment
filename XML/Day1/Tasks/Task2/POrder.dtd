@@ -1,0 +1,40 @@
+<!--  Start Defining Elements -->
+
+<!ELEMENT purchaseOrder (shipTo,billTo,items,ship_date,ship_method)>
+<!ELEMENT shipTo (name,street,city,state,zip)>
+<!ELEMENT billTo (name,street,city,state,zip)>
+
+<!ELEMENT items (item+)>
+<!ELEMENT ship_date (#PCDATA)>
+<!ELEMENT ship_method EMPTY >
+
+
+<!ELEMENT item (#PCDATA | productName| quantity | USPrice )* >
+
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+
+<!ELEMENT productName (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT USPrice (#PCDATA)>
+
+
+<!--  End Defining Elements -->
+
+
+<!--  Start Defining Attributes -->
+
+<!ATTLIST purchaseOrder orderDate CDATA #REQUIRED >
+<!ATTLIST shipTo country CDATA #REQUIRED >
+<!ATTLIST billTo country CDATA #REQUIRED >
+
+<!ATTLIST item partNum CDATA #REQUIRED >
+<!ATTLIST ship_method type CDATA #REQUIRED >
+
+
+
+<!--  End Defining Attributes -->

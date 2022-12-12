@@ -1,0 +1,39 @@
+<!--  Start Defining Elements -->
+
+<!ELEMENT family (grandfather)>
+<!ELEMENT grandfather (#PCDATA | father | uncle | aunt)*>
+
+<!ELEMENT father (mother | daughter | aunt | son)*>
+
+<!ELEMENT mother (name)>
+
+<!--  may have child or not -->
+<!ELEMENT daughter (#PCDATA | name |child)*>
+
+<!ELEMENT son (#PCDATA )> 
+
+<!ELEMENT name (#PCDATA )>
+<!ELEMENT child (#PCDATA )>
+
+<!ELEMENT uncle (#PCDATA )>
+<!ELEMENT aunt (#PCDATA )>
+<!--  End Defining Elements -->
+
+
+
+<!--  Start Defining Attributes -->
+
+<!ATTLIST father name CDATA #REQUIRED >
+<!ATTLIST father job CDATA #REQUIRED >
+
+<!ATTLIST daughter age CDATA #REQUIRED >
+<!ATTLIST daughter job CDATA #REQUIRED >
+
+
+<!ATTLIST son age CDATA #REQUIRED >
+<!ATTLIST son sport CDATA #REQUIRED >
+
+
+<!ATTLIST aunt sons CDATA #REQUIRED >
+
+<!--  End Defining Attributes -->
