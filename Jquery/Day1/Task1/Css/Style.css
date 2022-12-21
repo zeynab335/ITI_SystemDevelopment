@@ -1,4 +1,7 @@
 /* *Global Frameworks */
 body{
-    background-color: darkcyan;
+    background-color: rgba(25, 25, 25);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
