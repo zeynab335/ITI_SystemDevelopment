@@ -1,0 +1,30 @@
+
+@media (max-width:776px) {
+    .MenuList{
+        justify-content: flex-start!important;
+    }
+    .MenuListButtons {
+        display: flex;
+        flex-direction:column;
+    }
+    .MenuListButtons button{
+        margin-bottom: 10px;
+    }
+    .MenuListDetails{
+        width: 70%;   
+    }
+
+    .ServicesDetails{
+        left:90px!important;
+        top: -200px!important;
+
+    }
+}
+
+
+@media (min-width:776px ) and (max-width:991px){
+    .MenuListDetails > div{
+        top: -85px;
+        right: calc(100%/3 - 70px);
+    }
+}

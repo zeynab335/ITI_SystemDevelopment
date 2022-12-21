@@ -1,0 +1,90 @@
+
+/* * Start MenuList */
+.MenuList{
+    width: 95%;
+    padding: 20px;
+    margin: 3vh auto;
+    /* box-shadow: var(--boxShadwing); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.MenuListButtons > button{
+    background-color: #ECCB83;
+    padding: 12px 30px ;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #434C5F;
+    cursor: pointer;
+    transition: all 1s;
+}
+.MenuListButtons > button#Services{
+    border-radius: 0!important;
+    border-top-left-radius: 10px!important;
+    border-top-right-radius: 10px!important;
+}
+.MenuListButtons > button:hover , 
+.MenuListButtons > button.active
+{
+    background-color: #434C5F;
+    color: #ECCB83;
+}
+
+/* * End MenuList */
+
+
+/** start MenuListDetails */
+.MenuListDetails{
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.MenuListDetails  > div  {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #434C5F;
+    border-radius: 10px;
+}
+
+.MenuListDetails  > div:first-of-type{
+    display: flex;
+}
+
+/* ? Start About Details */
+.SnowImage{
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+}
+/*? End About Details */
+
+
+/* ? Start GalleryDetails */
+.GalleryDetails {
+    flex-direction: row!important;
+}
+.GalleryDetails .SnowImage{
+    width: 95%;
+    margin-left: 2%;
+}
+.GalleryDetails .ArrowLeft > img,
+.GalleryDetails .ArrowRight > img{
+    width: 50px!important;
+    height: 50px!important;
+    cursor: pointer;
+}
+/* ? end GalleryDetails */
+
+
+/** end MenuListDetails */
+
+

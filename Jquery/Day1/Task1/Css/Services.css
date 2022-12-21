@@ -1,0 +1,40 @@
+
+
+/* ?  start ServicesDetails */
+.ServicesDetails{
+    position: absolute;
+    width: 120px!important;
+    height: auto!important;
+    border-radius: 0!important;
+    background-color: #ECCB83!important;
+    color: #2E3441;
+
+    top: -36px;
+    left: calc(100%/3 + 70px);
+
+
+    border-bottom-left-radius: 10px!important;
+    border-bottom-right-radius: 10px!important;
+}
+
+.ServicesDetails div{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #2E3441;
+    cursor: pointer;
+}
+.ServicesDetails div:last-of-type{
+    border: 0;
+}
+
+.ServicesDetails div:hover{
+    background-color: #2E3441;
+    color: #ECCB83;
+}
+
+.ServicesDetails div:last-of-type{
+    border-bottom-left-radius: 10px!important;
+    border-bottom-right-radius: 10px!important;
+}
+/* ?  end ServicesDetails */

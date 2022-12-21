@@ -1,0 +1,70 @@
+
+/* ? Start ComplainDetails */
+.ComplainDetails{
+    align-items: flex-start!important;
+    padding-left: 25px;
+}
+.ComplainDetails h2 { 
+    padding-bottom: 10px;
+    color: #D2584F;
+    margin: 15px auto!important;
+}
+
+.ComplainDetails .formGroup{margin-bottom: 15px}
+
+.ComplainDetails .formGroup label{
+    color: #E5E9EE;
+    margin-right: 50px!important;
+    font-weight: bold;
+}
+
+.ComplainDetails .formGroup label.Complain{margin-right: 25px!important;}
+.ComplainDetails .formGroup input,
+.ComplainDetails .formGroup textarea
+{
+    padding: 5px;
+    background-color: #2E3441;
+    border: 0;
+}
+
+.btnSend{
+    background-color: #D2584F;
+    border: 0;
+    padding: 8px 30px;
+    bottom: -20px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #E5E9EE;
+    font-weight: bold;
+    transition: all 1s;
+    margin: auto;
+}
+
+.btnSend:hover{
+    background-color: #2E3441;
+}
+
+/* ? End ComplainDetails */
+
+
+/* ? Start CompainDetails */
+
+
+.ComplainFormDetails{
+    padding: 25px!important;
+    align-items: flex-start!important;
+    display: none;
+}
+
+.ComplainFormDetails h2{
+    margin: auto;
+    margin-bottom: 25px;
+    color: #ECCB83;
+}
+
+
+/* ? End CompainDetails */
+
+
+

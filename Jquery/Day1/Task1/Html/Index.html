@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task1</title>
     <!-- Start Adding External Style Sheets -->
-    <link href="../Css/Style.css" rel="stylesheet" />
     <link href="../Css/Index.css" rel="stylesheet" />
+    <link href="../Css/MenuList.css" rel="stylesheet" />
+    
+    
+    <link href="../Css/ComplainForm.css" rel="stylesheet" />
+    <link href="../Css/Services.css" rel="stylesheet" />
+    <link href="../Css/Media.css" rel="stylesheet" />
     <!-- end Adding External Style Sheets -->
 
 </head>
@@ -24,15 +29,107 @@
     <!--* Start Menu List  -->
     <div class="MenuList">
         <div class="MenuListButtons">
-            <button id="About">     About       </button>
-            <button id="Gallery">   Gallery     </button>
-            <button id="Services">  Services    </button>
-            <button id="Complain">  Complain    </button>
-    
+            <button id="About" class="active">  About </button>
+            <button id="Gallery">   Gallery  </button>
+            <button id="Services" >  Services </button>
+            <button id="Complain">  Complain </button>
         </div>
        
     </div>
     <!--* end Menu List -->
+
+
+    <!--* Start Content OF Each Items  -->
+    <div class="MenuListDetails">
+        
+        <div class="AboutDetails">
+            <h2> Story About Snow Man</h2>
+            <img src="../Images/3.jpg" class="SnowImage"/>
+        </div>
+
+        <div class="GalleryDetails">
+            <!-- ? Arrow Left  -->
+            <div class="ArrowLeft">
+                <img src="../Images/left.png"/>
+            </div>
+
+            <!-- ? Gallery Container  -->
+            <div class="GalleryContainer">
+                <img src="../Images/3.jpg" class="SnowImage"/>
+            </div>
+            
+            <!-- ? Arrow Right  -->
+            <div class="ArrowRight">
+                <img src="../Images/right.png"/>
+            </div>
+
+        </div>
+
+        <div class="ComplainDetails">
+            <h2> Complain Form</h2>
+            <div class="FormContainer">
+                <div class="formGroup">
+                    <label for="Name"> Name </label>
+                    <input type="text" id="Name"  Value="" />
+                </div>
+                <div class="formGroup">
+                    <label for="Email"> Email </label>
+                    <input type="text" id="Email" Value="" placeholder="" />
+                </div>
+                <div class="formGroup">
+                    <label for="Phone"> Phone </label>
+                    <input type="text" id="Phone" Value="" placeholder="" />
+                </div>
+                <div class="formGroup">
+                    <label for="Complain" class="Complain"> Complain </label>
+                    <textarea id="Complain" Value="" placeholder="" ></textarea>
+                </div>
+            </div>
+            <input type="button" id="btnSend" class="btnSend" value="Send"/>
+        </div>
+
+        <div class="ComplainFormDetails">
+            <h2> Complain Details </h2>
+           
+            <div class="Details">
+                <h3> Your Complain is  </h3>
+                <p id="ComplainName"></p>
+            </div>
+            
+            <div class="Details">
+                <h3> Your name is </h3>
+                <p id="UserName"></p>
+            </div>
+
+            <div class="Details">
+                <h3> Your email is </h3>
+                <p id="Email"></p>
+            </div>
+
+            <div class="Details">
+                <h3>Your phone is </h3>
+                <p id="Phone"></p>
+            </div>
+        </div>
+
+        <div class="ServicesDetails">
+            
+            <div>
+                <p> Item #1</p>
+            </div>
+            <div>
+                <p> Item #2</p>
+            </div>
+            <div>
+                <p> Item #3</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--* End Content OF Each Items  -->
+
     
 
     <!-- Start Adding Scripts -->
