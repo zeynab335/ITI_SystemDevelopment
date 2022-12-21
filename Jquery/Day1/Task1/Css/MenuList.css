@@ -55,9 +55,6 @@
     border-radius: 10px;
 }
 
-.MenuListDetails  > div:first-of-type{
-    display: flex;
-}
 
 /* ? Start About Details */
 .SnowImage{
@@ -73,8 +70,8 @@
     flex-direction: row!important;
 }
 .GalleryDetails .SnowImage{
-    width: 95%;
-    margin-left: 2%;
+    width: 350px;
+    height: 250px;
 }
 .GalleryDetails .ArrowLeft > img,
 .GalleryDetails .ArrowRight > img{
