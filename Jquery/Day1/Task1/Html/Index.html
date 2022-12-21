@@ -51,7 +51,7 @@
             <!-- ? Arrow Left  -->
             <div class="ArrowLeft" id="ArrowLeft">
                 <img src="../Images/left.png"/>
-            </div>
+            </div>  
 
             <!-- ? Gallery Container  -->
             <div class="GalleryContainer">
@@ -70,19 +70,19 @@
             <div class="FormContainer">
                 <div class="formGroup">
                     <label for="Name"> Name </label>
-                    <input type="text" id="Name"  Value="" />
+                    <input type="text" id="Name"  value="" />
                 </div>
                 <div class="formGroup">
                     <label for="Email"> Email </label>
-                    <input type="text" id="Email" Value="" placeholder="" />
+                    <input type="text" id="Email" value="" placeholder="" />
                 </div>
                 <div class="formGroup">
                     <label for="Phone"> Phone </label>
-                    <input type="text" id="Phone" Value="" placeholder="" />
+                    <input type="text" id="Phone" value="" placeholder="" />
                 </div>
                 <div class="formGroup">
                     <label for="Complain" class="Complain"> Complain </label>
-                    <textarea id="Complain" Value="" placeholder="" ></textarea>
+                    <textarea id="ComplainMsg" value="" placeholder="" ></textarea>
                 </div>
             </div>
             <input type="button" id="btnSend" class="btnSend" value="Send"/>
@@ -93,12 +93,12 @@
            
             <div class="Details">
                 <h3> Your Complain is  </h3>
-                <p id="ComplainName"></p>
+                <p id="ComplainMsg"></p>
             </div>
             
             <div class="Details">
                 <h3> Your name is </h3>
-                <p id="UserName"></p>
+                <p id="Name"></p>
             </div>
 
             <div class="Details">
@@ -110,6 +110,10 @@
                 <h3>Your phone is </h3>
                 <p id="Phone"></p>
             </div>
+
+            <button class="btnBackToForm" id="btnBackToForm"> 
+                Back
+            </button>
         </div>
 
         <div class="ServicesDetails">
@@ -134,7 +138,10 @@
 
     <!-- Start Adding Scripts -->
     <script src="../Libaraies/Jquery.js"></script>
+    <script src="../Libaraies/allCookieList.js"></script>
+    
     <script src="../Js/Index.js"></script>
+    <script src="../Js/ComplainForm.js"></script>
     <!-- end Adding Scripts -->
 
 </body>
