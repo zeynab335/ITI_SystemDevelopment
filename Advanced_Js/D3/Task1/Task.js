@@ -70,8 +70,12 @@
     })
 
 
-
-
+    //* Override .toString() function to display a message with all of the list content.
+    LinkedList.prototype.toString = function(){
+        return function(){
+            console.log("this is Overide TOString Function")
+        }()
+    }
 
     //l1.Append(2)
     L1.Prepend(2);
@@ -87,6 +91,8 @@
 
     L1.getList()    //* 3 
 
+
+    L1.toString()
 
 
 

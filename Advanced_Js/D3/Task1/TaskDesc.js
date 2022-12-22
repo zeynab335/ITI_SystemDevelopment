@@ -14,7 +14,7 @@
         *all of the properties should be defined using accessor and/or data descriptor,
         * prevent them from being deleted, iterated or being modified.
         
-        & Override .toString() function to display a message with all of the list content.
+        * Override .toString() function to display a message with all of the list content.
         * you can add any property you need
 
 
