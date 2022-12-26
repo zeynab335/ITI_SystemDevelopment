@@ -101,7 +101,7 @@ Select * from HR.Emp      -- not working
 --5 Increase the budget of the project where the manager number is 10102 by 10%.
 
 update company.project set budget +=(budget*0.1) from hr.employee
-where EmpNo in(select empno from Works_on where empno=10102)
+where EmpNo in(select empno from Works_on where empno=10102 and Job='manger') 
 
 
 update Company.Project
