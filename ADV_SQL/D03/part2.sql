@@ -5,7 +5,7 @@ use SD
 
 create view v_clerk
 as 
-	select ProjectName , e.EmpNo , Job
+	select ProjectName , e.EmpNo , w.Enter_Date , Job
 	from Company.Project p , Works_on w , Hr.Employee e
 	where (p.ProjectNo = w.ProjectNo) and (e.EmpNo = w.EmpNo) and (Job = 'Clerk')
 
@@ -64,11 +64,11 @@ drop view v_count
 
 
 -- 7)	Create view that will display the emp# and emp lastname who works on dept# is ‘d2’
-create view e_count
+alter view e_count
 as 
-	select EmpNo as 'emp#' , EmpLname , DeptName
-	from Company.Department d , HR.Employee e
-	where (d.DeptNo = e.DeptNo)  and (DeptName = 'd2')
+	select e.EmpNo as 'emp#' , EmpLname 
+	from HR.Employee e
+	where (e.DeptNo = 'd2')
 
 
 select * from e_count
@@ -113,7 +113,7 @@ as
 	select p.ProjectNo , e.EmpNo  , Enter_Date
 	from Company.Project p , Works_on w , HR.Employee e
 	where (p.ProjectNo = w.ProjectNo) and (e.EmpNo = w.EmpNo) 
-	and (year(Enter_Date) = 2006 )
+	and (year(Enter_Date) = 2006 and (Enter_Date between '1-12-2006' and '12-30-2006') )
 	
 
 select * from v_2006_check
