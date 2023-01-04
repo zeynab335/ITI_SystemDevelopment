@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <video src="./Media/frozen.mp4" width="300px" height="200px" id="video" poster="image/frozen.jpg"></video>
+    <div class="controls">
+        <input type="range" name="range" id="vRange" style="width: 300px;" value="0" max=106>
+
+        <div style="display: inline-block;">
+            <span id="vCurrentTime">0.00</span>
+            /
+            <span id="vEndTime">0.00</span>
+        </div>
+        <br>
+
+        <button id="vPlay"> Play </button>
+        <button id="vPause"> Stop </button>
+
+        <button id="vStartAgain"> &lt;&lt; </button>
+        <button id="vBackword"> &lt; </button>
+
+        <button id="vForward"> &gt; </button>
+        <button id="vEnd"> &gt;&gt; </button>
+
+        <!-- * speed range -->
+        <input type="range" name="Volume" id="VolumeRange" style="width: 100px;" min="0" max="100" >
+        <button id="vMute">Mute </button>
+        <br>
+        <span> Speed </span>
+        <input type="range" name="speed" id="vSpeedRange" style="width: 100px;" value="0.5" min="0.5" max="4" step="0.5">
+
+
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

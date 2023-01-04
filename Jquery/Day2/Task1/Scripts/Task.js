@@ -1,18 +1,26 @@
 
 $(function(){
-    var counter = 0;
-    var end  = 500;
-    var timer = setInterval(()=>{
-        if(end == counter){
+   
+    /*var timer = setInterval(()=>{
+        
+        //
+        
+    },1000)*/
+
+    
+    var counter ;
+    var timer = setInterval(function(){
+        var left  = 200;
+        $("#img").eq(0).animate({left:"200px"},5000,"easeOutBounce");//easing["linea","swing",.....]
+        counter = getComputedStyle($("#img").get(0));
+        
+        if(left == counter){
             clearInterval(timer);
         }
         else{
-            counter += 20;
-            $('#img').eq(0).css('left', counter)
+            $('#imgSrc').eq(0).text('<img src="12.gif" style="left:"'+ counter['left'] + '/>')
+            counter+=10   
         }
-        $('#imgSrc').eq(0).text('<img src="12.gif" style="left:"'+ counter + 'px"/>')
-    },1000)
-    
-
-
+        
+    },100)
 })
