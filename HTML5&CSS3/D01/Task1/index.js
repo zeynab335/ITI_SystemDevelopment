@@ -35,7 +35,7 @@ timer = setInterval(() => {
 
 //* put current time of video [on change range input of video ]
 document.getElementById('vRange').onchange = function(){
-    document.getElementById('vRange').setAttribute('value', document.getElementById('vRange').value)
+    //document.getElementById('vRange').setAttribute('value', document.getElementById('vRange').value)
     video.currentTime = document.getElementById('vRange').value;
 }
 
@@ -51,17 +51,17 @@ document.getElementById('vPause').onclick = function(){
 }
 
 
-//* forward video 
+//* forward video +5
 document.getElementById('vForward').onclick = function(){
     video.currentTime += 5;
 }
 
-//* backward video 
+//* backward video -5
 document.getElementById('vBackword').onclick = function(){
     video.currentTime -= 5;
 }
 
-//* forward video 
+//* start video again
 document.getElementById('vStartAgain').onclick = function(){
     video.currentTime = 0;
     document.getElementById('vRange').value = video.currentTime
@@ -70,7 +70,7 @@ document.getElementById('vStartAgain').onclick = function(){
 
 }
 
-//* backward video 
+//* end video
 document.getElementById('vEnd').onclick = function(){
     video.currentTime  = video.duration - 10;
     document.getElementById('vRange').value = video.currentTime
