@@ -1,0 +1,31 @@
+@keyframes pacmanHover {
+    from{
+        border-left: 60px solid red;
+
+    }
+    to{
+        border-left: 59px solid red;
+        
+    }
+}
+
+.pac-man {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+
+
+.pac-man:hover{
+    animation-name: pacmanHover;
+    animation-duration: 1s;
+    border-left: 59px solid red;
+    transition: all 2s;
+
+}
