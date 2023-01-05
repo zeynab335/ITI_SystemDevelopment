@@ -1,0 +1,68 @@
+.card{
+    width:300px;
+    height: 300px;
+    border: 5px solid red;
+    border-radius: 20px;
+    position: relative;
+    font-size: 50px;
+}
+
+.card .text:last-of-type{
+    bottom: 0px;
+    position: absolute;
+    text-align:right;
+    width: 90%;
+}
+
+.blackHeart{
+    position: relative;
+    width: 100%;
+    margin-left: calc(150px / 2);
+    margin-top: 20px;
+}
+
+
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    transform: rotate(180deg);
+}
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 40px;
+    top: 0px;
+    width: 40px;
+    height: 68px;
+    background: black;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    z-index: 1000;
+  }
+
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+  
+span{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid black;
+    position: absolute;
+    left: 35px;
+    top: 68px;
+    z-index: 0;
+
+}
+
+
+  
