@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="form">
+        <div class="form-group">
+            <input type="text"  required placeholder="Username" pattern="[a-z]{3,}" />
+            <span>username may only be a series of alphabeta characteres </span>
+        </div>
+
+        <div class="form-group" placeholder="email">
+            <!-- d@gmail.com -->
+            <input type="email" required placeholder="Email" pattern="[a-z]*@[a-z]{4,}\.[a-z]{3}">
+            <span>email may not include any special characters other than '@' sign </span>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group input{display: block; margin-bottom: 5px;}
+
+.form-group input:required{
+    outline:2px solid red;
+}
+
+.form-group input:valid{
+    outline: none;
+}
+
+.form-group input:valid+span{
+    visibility: hidden;
+}
