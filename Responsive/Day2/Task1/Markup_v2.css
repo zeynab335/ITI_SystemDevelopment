@@ -1,0 +1,49 @@
+.header , body{
+    background-color:#F0F0F0;
+}
+.subscribe
+{
+    margin-left: 20px;
+    background: url("images/rss.png") left center no-repeat;
+}
+
+ 
+#intro
+{
+    position: relative;
+    margin-top: 66px;
+    padding: 44px;
+    background: #467612 url("images/intro_background.png") repeat-x;
+    background-size: 100%;
+    border-radius: 22px;
+}
+
+
+
+#intro p{color: #d9f499;}
+
+.into_text{
+    z-index: 999;
+}
+
+
+
+.Archives li:hover, .Categories li:hover{
+    text-decoration: underline;
+}
+
+aside section
+{
+
+    background: url("images/sidebar_section_background.png") repeat-x;
+    border-radius: 11px;
+}
+
+aside {
+    width: 300px;
+    background: url(images/sidebar_background.png) top left;
+}
+
+.list-style-square{
+    list-style: square;
+}
