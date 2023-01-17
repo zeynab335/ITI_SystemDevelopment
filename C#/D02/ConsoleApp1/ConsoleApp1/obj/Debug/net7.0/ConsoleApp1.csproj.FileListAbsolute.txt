@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\refint\ConsoleApp1.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.genruntimeconfig.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D02\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ref\ConsoleApp1.dll
