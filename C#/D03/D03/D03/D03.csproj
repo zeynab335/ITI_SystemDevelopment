@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Program\Program.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="D03">
+      <HintPath>bin\Debug\net7.0\D03.dll</HintPath>
+    </Reference>
+    <Reference Include="Program">
+      <HintPath>..\Program\bin\Debug\net7.0\Program.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

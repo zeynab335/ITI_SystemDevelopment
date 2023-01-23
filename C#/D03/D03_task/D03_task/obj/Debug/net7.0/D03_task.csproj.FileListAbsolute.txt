@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\bin\Debug\net7.0\D03_task.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\bin\Debug\net7.0\D03_task.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\bin\Debug\net7.0\D03_task.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\bin\Debug\net7.0\D03_task.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\bin\Debug\net7.0\D03_task.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\refint\D03_task.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\D03_task.genruntimeconfig.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03_task\D03_task\obj\Debug\net7.0\ref\D03_task.dll

@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\bin\Debug\net7.0\Passing_ByRef_ByValue.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\bin\Debug\net7.0\Passing_ByRef_ByValue.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\bin\Debug\net7.0\Passing_ByRef_ByValue.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\bin\Debug\net7.0\Passing_ByRef_ByValue.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\bin\Debug\net7.0\Passing_ByRef_ByValue.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\refint\Passing_ByRef_ByValue.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\Passing_ByRef_ByValue.genruntimeconfig.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\Task2\Array_Passing_ByRef_ByValue\Array_Passing_ByRef_ByValue\obj\Debug\net7.0\ref\Passing_ByRef_ByValue.dll

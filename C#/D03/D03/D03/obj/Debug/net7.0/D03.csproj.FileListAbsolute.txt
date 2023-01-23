@@ -1,0 +1,17 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\D03.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\D03.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\refint\D03.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\ref\D03.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\obj\Debug\net7.0\D03.csproj.CopyComplete
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\Program.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\Program.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\Program.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\Program.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D03\D03\D03\bin\Debug\net7.0\Program.pdb

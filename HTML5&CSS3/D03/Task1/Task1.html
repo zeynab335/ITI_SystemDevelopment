@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <script src="conditionizr-4.4.0/conditionizr-4.4.0/dist/conditionizr.js"></script>
+    
+</head>
+
+<body>
+    <button onclick="setCookie('seesion' , '1')"> djdjj </button>
+    <script>
+        conditionizr.add("cookies", function() {
+            return window.setCookie == undefined ;//true;//window.localStorage=="undefined";
+        });
+
+        conditionizr.on("cookies", function() {
+            console.log("cookies Plyfill is used");
+        })
+
+        conditionizr.polyfill("allCookieList.js", ["cookies"]);
+
+    </script>
+</body>
+</html>
