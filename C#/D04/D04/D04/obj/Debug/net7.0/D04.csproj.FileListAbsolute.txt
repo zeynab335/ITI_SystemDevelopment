@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\bin\Debug\net7.0\D04.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\bin\Debug\net7.0\D04.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\bin\Debug\net7.0\D04.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\bin\Debug\net7.0\D04.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\bin\Debug\net7.0\D04.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\refint\D04.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\D04.genruntimeconfig.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D04\D04\D04\obj\Debug\net7.0\ref\D04.dll
