@@ -47,11 +47,15 @@
             Console.WriteLine(P2.ToString());
 
 
-            if(P1 == P2)
+            if(P1 != P2)
+            {
+                Console.WriteLine("2 Points are not Equals ");
+            }
+            else
             {
                 Console.WriteLine("2 Points are Equals ");
-            }
 
+            }
 
             //*******************************
             //* Math

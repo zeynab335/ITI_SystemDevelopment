@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D05
 {
-    internal class Point3D
+    internal class Point3D:Point
     {
         public int X { set; get; }
         public int Y { set; get; }

@@ -13,7 +13,7 @@ namespace D06
         public string Body { get; set; }
         public int[] Marks { get; set; }
 
-        public AnswerLists answers;
+        public Answers answers;
         public int QID { get; set; }
         
 
