@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <canvas id="c1" width="
+    800" height="350"></canvas>
+    <script>
+        var canvas = document.getElementById("c1");
+        var ctx = canvas.getContext("2d");
+      
+        var img= new Image();
+        img.src="image.png";
+        
+        
+        img.onload=function(){
+            ctx.save();///////
+            ctx.translate(0,0);
+            ctx.lineWidth=5;
+            ctx.strokeStyle="white"
+            ctx.drawImage(img,0,0,700,350);
+            //ctx.restore();    
+            
+            
+            ctx.translate(0,280);
+            ctx.beginPath();
+            ctx.font = "50px Arial";
+            ctx.shadowColor="white";
+            
+            ctx.shadowBlur = 3;
+            ctx.shadowOffsetX = 5;
+            ctx.shadowOffsetY = 5;
+            
+            ctx.lineWidth=3;
+            ctx.strokeStyle = "white";
+
+            ctx.strokeText("Its gonna be ok sweetheart ", 10, 50);
+        }
+    </script>
+    
+</body>
+</html>
