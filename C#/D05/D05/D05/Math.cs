@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D05
 {
-    internal class Math
+    internal static class Math
     {
         public static long Add(long x, long y) {
             return x + y;
@@ -24,7 +24,11 @@ namespace D05
 
         public static double Divide(double x, double y)
         {
-            return x / y;
+            if(x > 0 && y > 0)
+            {
+                 return x / y;
+            }
+            return 0;
         }
 
 

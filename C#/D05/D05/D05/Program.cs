@@ -47,11 +47,15 @@
             Console.WriteLine(P2.ToString());
 
 
-            if(P1 == P2)
+            if(P1 != P2)
+            {
+                Console.WriteLine("2 Points are not Equals ");
+            }
+            else
             {
                 Console.WriteLine("2 Points are Equals ");
-            }
 
+            }
 
             //*******************************
             //* Math
@@ -106,8 +110,12 @@
             Console.WriteLine(D3 < D1);
             Console.WriteLine(D3 > D1);
 
-            DateTime date = (DateTime)D3;
-            Console.WriteLine(date.ToString());
+            //Duration D4 = new Duration(49,70,70);
+            //DateTime date = (DateTime)D4;
+            //Console.WriteLine(date.ToString());
+
+            Duration D5 = new Duration(49, 70, 70);
+            Console.WriteLine(D5.ToString());
 
 
 

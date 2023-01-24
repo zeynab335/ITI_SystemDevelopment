@@ -24,18 +24,21 @@ namespace D05
 
         public static bool operator ==(Point P1 , Point P2)
         {
-            //if ( (P1!= null) && (P2 != null))
-            //{
-            //}
+            if(P1.Equals(null) & P2.Equals(null))
+            {
+                return false ;
+            }
             return (P1.X == P2.X) && (P1.Y == P2.Y);
-
-
             
         }
 
         public static bool operator !=(Point P1, Point P2)
         {
-
+  
+            if (P1.Equals(null) & P2.Equals(null))
+            {
+                return false;
+            }
             return (P1.X != P2.X) || (P1.Y != P2.Y);
 
         }
