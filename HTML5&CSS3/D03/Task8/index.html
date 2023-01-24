@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="c1" width="1000" height="900"></canvas>
+    <script>
+        
+        var canvas = document.getElementById("c1");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle='rgba(112,191,255)';
+        
+        var x = 10
+        ctx.translate(400,400);
+        
+
+        ctx.beginPath();
+        ctx.rotate(-30*Math.PI / 180 );
+        ctx.fillRect( 0,200 ,100, 250);
+        ctx.save();
+
+        ctx.beginPath();
+        ctx.rotate(-30*Math.PI / 180 );
+        ctx.fillRect( 100,200 ,100, 250);
+        ctx.save();
+        
+        ctx.beginPath();
+        ctx.restore();
+        ctx.rotate(-30*Math.PI / 180 );
+        ctx.fillRect( 70 ,270 ,100, 250);
+        
+       
+
+        
+        
+       
+
+        
+        // var timer = setInterval(()=>{
+            
+        //     ctx.beginPath();
+        //     ctx.rotate(Math.PI / 180 * -x);
+        //     ctx.fillRect(400,200 , 100, 250);
+
+        //     x+=10;
+            
+        
+        // },1000)
+    
+    </script>
+</body>
+</html>
