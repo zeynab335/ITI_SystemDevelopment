@@ -115,23 +115,28 @@ namespace D05
         {
             return a.Hours > b.Hours;
         }
+
+        // D1 < D2
         public static bool operator <(Duration a, Duration b)
         {
             return a.Hours < b.Hours;
 
         }
+        // D1 >= D2
+
         public static bool operator >=(Duration a, Duration b)
         {
             return a.Hours >= b.Hours;
 
         }
+        // D1 <= D2
 
         public static bool operator <=(Duration a, Duration b)
         {
             return a.Hours <= b.Hours;
 
         }
-
+        // DateTime operatot overloading
         public static explicit operator DateTime(Duration a)
         {
             string time = a.Hours + ":" + a.Minutes + ":" + a.Seconds;  
