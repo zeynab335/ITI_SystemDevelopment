@@ -1,0 +1,12 @@
+1. Which language among the following support an object-oriented approach?
+2. Which language among the following support an object-based approach?
+3. Which concept is not supported by object-based programming languages?
+4.Which one of the following states the correct difference between object-oriented programming and object-based programming?
+1. ____ is considered to be a partitioned area of computer memory that stores and set of operations that can access the data.
+2. When a program is executed, the ____ interacted by sending a message to one another.
+3. Objects are the variables of the type ____?
+4. What is the most striking feature of class?
+1. Polymorphism depends upon the types of data used in the operation.
+2. FOTAN does not follow the concept of OOP
+3. Member functions are declared inside a class have to be defined separately outside the class.
+4. The subroutines contained in an object are called Instance Methods.

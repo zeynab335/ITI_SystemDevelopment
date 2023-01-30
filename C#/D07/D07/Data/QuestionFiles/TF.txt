@@ -1,0 +1,4 @@
+1. Polymorphism depends upon the types of data used in the operation.
+2. FOTAN does not follow the concept of OOP
+3. Member functions are declared inside a class have to be defined separately outside the class.
+4. The subroutines contained in an object are called Instance Methods.

@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\bin\Debug\net7.0\D07.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\bin\Debug\net7.0\D07.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\bin\Debug\net7.0\D07.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\bin\Debug\net7.0\D07.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\bin\Debug\net7.0\D07.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\refint\D07.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\D07.genruntimeconfig.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D07\D07\D07\obj\Debug\net7.0\ref\D07.dll
