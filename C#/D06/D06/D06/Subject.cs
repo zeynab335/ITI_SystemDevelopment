@@ -8,11 +8,15 @@ namespace D06
 {
     internal class Subject
     {
-        private string subName;
-        private int subID;
+        public string SubName { get; }
+        public int SubID { get; }
 
 
-        public Subject() { }
+        public Subject(string subName , int subID) { 
+            SubName = subName;
+            SubID = subID;
+        }
+
 
     }
 }

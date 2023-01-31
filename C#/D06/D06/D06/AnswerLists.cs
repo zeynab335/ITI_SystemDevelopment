@@ -12,21 +12,43 @@ namespace D06
     {
         private string[] choices;
         private int QID;
+        private int NumOfChoices ;
 
         public AnswerLists(int size, int qID)
         {
             QID = qID;
+            NumOfChoices = size;
             choices = new string[size];
         }
 
         public void setChoices(string answer , int index)
         {
-            choices[index] = answer;
+        
+            if (index < NumOfChoices){ 
+                choices[index] = answer;
+            }
         }
 
-        public string[] getAllChoices()
+        public string getAllChoices()
         {
-            return choices;
+            string Q_choices = "";
+            foreach (string choice in choices)
+            {
+                // last element of choices array
+                try
+                {
+                    if (choice.Equals(choices[^1]))
+                    {
+                        Q_choices += choice;
+                    }
+                    else { Q_choices += choice + "\n"; }
+                }
+                catch {
+                    Console.WriteLine("Choices not available ");
+                }
+                
+            }
+            return Q_choices;
         }
     }
 }

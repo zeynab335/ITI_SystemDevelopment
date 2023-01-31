@@ -6,41 +6,57 @@ using System.Threading.Tasks;
 
 namespace D06
 {
-    internal class Questions
+    internal abstract class Questions
     {
         // a Body, Marks, and Header
         public string Header { get; set; }
         public string Body { get; set; }
-        public int[] Marks { get; set; }
+        public int Mark { get; set; }
 
-        public Answers answers;
+        public AnswerLists choices;
+
         public int QID { get; set; }
-        
+        public string ModelAnswer { get; set; }
 
-        // Marks => correction
-        // Answers => Answer of students || answers of all questions in exam
-
-        public Questions(int qID , string body , string header , int numOfQst )
+        public Questions(int qID , string body , string header , int mark , string modelAnswer,int numOfChoices)
         {
             QID = qID;
             Body = body;
             Header = header;
-            Marks = new int[numOfQst] ;
+            Mark =  mark;
+            ModelAnswer = modelAnswer;
+            choices = new AnswerLists(numOfChoices,qID);
         }
 
-        public void setAnswerOfQuestions(AnswerLists[] AllAns , int[] index , int size)
+        public Questions(int qID, string body, string header, int mark, string modelAnswer)
         {
-            for(int i=0; i<size; i++)
+            QID = qID;
+            Body = body;
+            Header = header;
+            Mark = mark;
+            ModelAnswer = modelAnswer;
+        }
+
+
+
+        //public abstract void setChoicesOfQuestion(string[] Allchoices);
+       
+        
+
+        public string getChoicesOfQuestion()
+        {
+            return choices?.getAllChoices();
+
+        }
+
+        public virtual int MarkQuestion(string std_answer)
+        {
+            
+            if(std_answer.Trim().ToLower().Equals(ModelAnswer.Trim().ToLower()))
             {
-                answers.setAnswers(AllAns[i] , index[i]);
+                return Mark;
             }
-         
-        }
-
-        public Answers getAnswerOfQuestions()
-        {
-            return answers;
-
+            return 0;
         }
 
 
