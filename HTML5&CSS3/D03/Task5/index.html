@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas id="c1" width="700" height="350"></canvas>
+
+    
+    <script>
+        var canvas = document.getElementById("c1");
+        var ctx = canvas.getContext("2d");
+        var grad1 = ctx.createLinearGradient(0, 0 ,0,350);
+        grad1.addColorStop(0, "rgba(34,196,255)")
+        grad1.addColorStop(0.5, "white")
+        grad1.addColorStop(0.5, "green")
+        grad1.addColorStop(1, "rgba(193,242,193)")
+
+
+        ctx.fillStyle = grad1;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+        ctx.beginPath();
+        ctx.moveTo(250, 100);
+        ctx.lineTo(450,100);
+        ctx.stroke()
+
+
+        ctx.beginPath();
+        ctx.moveTo(250, 200);
+        ctx.lineTo(250,100);
+        ctx.stroke()
+        
+
+        ctx.beginPath();
+        ctx.moveTo(450, 200);
+        ctx.lineTo(450,100);
+        ctx.stroke()
+        
+        
+        
+
+        
+        //* Create circle
+        var count = 50 , x=0 , y=200;
+
+        ctx.beginPath();
+        ctx.arc(100, 300, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "black"
+        ctx.fill();
+
+        
+
+
+       
+       
+    </script>
+</body>
+</html>

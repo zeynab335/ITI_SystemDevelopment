@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <canvas id= "c1" width="500" height="500" style="border: 2px solid black;"></canvas>
+        <script>
+            var canvas = document.getElementById("c1");
+            var ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+
+            var x= 0,y=0 , count = 50;
+            const canvas_Width = 500;
+            const canvas_Height = 500;
+            
+            var timer = setInterval(()=>{
+                if(x<canvas_Width && y<canvas_Height){
+                    x = x+count;
+                    y = y+count;
+                    ctx.lineTo(x , y);
+                    ctx.stroke();
+                }
+                else{
+                    alert("Animation End")
+                    clearInterval(timer)
+                }
+            },300)
+
+        </script>
+    </div>
+</body>
+</html>
