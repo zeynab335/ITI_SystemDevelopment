@@ -1,0 +1,4 @@
+Classes,Objects,Variables,Functions
+Objects,Classes,Operating system,Memory
+String,Boolean,Class,All data types can be included
+Data encapsulation,Collection of objects of similar type,Inheritance,All of the above

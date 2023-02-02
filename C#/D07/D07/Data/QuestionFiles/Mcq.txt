@@ -1,0 +1,4 @@
+1. ____ is considered to be a partitioned area of computer memory that stores and set of operations that can access the data.
+2. When a program is executed, the ____ interacted by sending a message to one another.
+3. Objects are the variables of the type ____?
+4. What is the most striking feature of class?

@@ -6,28 +6,39 @@ using System.Threading.Tasks;
 
 namespace D06
 {   
-    // all answers of all questions on exam
+    // all answers of Student of all questions on exam 
     internal class Answers
     {
-
-        private AnswerLists[] AnswersOfExams;
-
+      
+        private string[] StdAnswers;
+        private int[] QID;
         private int ExID;
+        private int StdID;
 
-        public Answers(int size, int exID)
+
+        public Answers(int exID , int NumOfQst , int stdId)
         {
-            ExID = exID;
-            AnswersOfExams = new AnswerLists[size];
+            ExID      = exID;
+            StdID     = stdId;
+            StdAnswers = new string[NumOfQst];
+            QID       = new int[NumOfQst];
         }
 
-        public void setAnswers(AnswerLists ans , int index)
+        public void setStdAnswers(int[] qID, string[] answer)
         {
-            AnswersOfExams[index] = ans;
+            StdAnswers = answer;
+            QID = qID;
         }
 
-        public AnswerLists[] getAnswers()
+        public void setStdAnswer(int qID, string answer, int index)
         {
-            return AnswersOfExams;
+            StdAnswers[index] = answer;
+            QID[index] = qID;
+        }
+
+        public string[] getStdAnswers()
+        {
+            return StdAnswers;
         }
 
 

@@ -1,0 +1,12 @@
+Modula-3,Ada 95,Modula-2,Both A and B
+Modula-3,83 Ada,Modula-2,Ada 95,Both A and B
+Inheritance,Dynamic binding,Only A,Both A and B
+A procedure-oriented language emphasizes data rather than procedure.,An object-oriented language emphasizes doing things or algorithms.,A procedure-oriented language emphasizes doing things or algorithms.,An object-oriented language emphasizes data rather than procedure.,In procedure-oriented programs are decomposed into functions.,In an object-oriented language, large programs are decomposed into functions.,In procedure-oriented language, large programs are decomposed into functions,In an object-oriented language, programs are decomposed into functions.,Both (a) and (b),Both (b) and (d)
+Classes,Objects,Variables,Functions
+Objects,Classes,Operating system,Memory
+String,Boolean,Class,All data types can be included
+Data encapsulation,Collection of objects of similar type,Inheritance,All of the above
+True,False
+True,False
+True,False
+True,False
