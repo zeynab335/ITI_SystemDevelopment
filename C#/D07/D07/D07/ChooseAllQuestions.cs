@@ -18,10 +18,7 @@ namespace D07
 
             {
                 choices.setChoices(Allchoices);
-                //for (int i = 0; i < Allchoices.Length; i++)
-                //{
-                //    choices.setChoices(Allchoices[i]);
-                //}
+               
             }
             catch
             {
