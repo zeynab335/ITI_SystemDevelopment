@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D09
 {
-    internal class Employee
+    public class Employee
     {
         // fields
         int vacationStock;
