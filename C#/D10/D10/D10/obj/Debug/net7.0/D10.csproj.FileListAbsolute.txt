@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\bin\Debug\net7.0\D10.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\bin\Debug\net7.0\D10.deps.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\bin\Debug\net7.0\D10.runtimeconfig.json
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\bin\Debug\net7.0\D10.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\bin\Debug\net7.0\D10.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.AssemblyInfo.cs
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\refint\D10.dll
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\D10.genruntimeconfig.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D10\D10\D10\obj\Debug\net7.0\ref\D10.dll
