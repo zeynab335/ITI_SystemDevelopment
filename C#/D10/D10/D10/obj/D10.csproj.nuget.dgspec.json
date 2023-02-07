@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj": {}
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj": {}
   },
   "projects": {
-    "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj": {
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj",
+        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj",
         "projectName": "D10",
-        "projectPath": "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj",
+        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\D10.csproj",
         "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-        "outputPath": "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\obj\\",
+        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D10\\D10\\D10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",

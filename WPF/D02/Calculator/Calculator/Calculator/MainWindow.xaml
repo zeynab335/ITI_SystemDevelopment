@@ -1,0 +1,48 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="300">
+    
+    
+    <DockPanel Background="Black">
+        <StackPanel DockPanel.Dock="Top" Margin="10 30">
+            <Border  CornerRadius="5" BorderBrush="White" BorderThickness="2" Padding="1">
+                <TextBlock x:Name="txt"   Background="White" Padding="30" TextAlignment="Right"></TextBlock>
+            </Border>
+        </StackPanel>
+
+        <StackPanel >
+            <UniformGrid Rows="4" Columns="4">
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText">7</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText">8</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText">9</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText">÷</Button>
+
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText" >4</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText" >5</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText">6</Button>
+                <Button Background="White" Margin="10 " Padding="10" Click="AddValueToText" >X</Button>
+
+                <Button Background="White" Margin="10 5" Padding="10" Click="AddValueToText" >1</Button>
+                <Button Background="White" Margin="10 5" Padding="10" Click="AddValueToText" >2</Button>
+                <Button Background="White" Margin="10 5" Padding="10" Click="AddValueToText" >3</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText" >-</Button>
+
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText" >0</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText" >.</Button>
+                <Button Background="White" Margin="10" Padding="10" Click="AddValueToText">+</Button>
+                <Button Background="Orange" Margin="5 1" Padding="10 " Click="AddValueToText" >=</Button>
+
+            </UniformGrid>
+
+            <StackPanel>
+                <Button Background="Orange" Margin="5 3" Padding="10 " Click="ClearText" > Clear</Button>
+
+            </StackPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>
