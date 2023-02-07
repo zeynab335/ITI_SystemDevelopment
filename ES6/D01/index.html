@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //#region  Task1
+        var x=5 , y=3 ;
+        
+        var [x , y] = [y,x];
+        console.log("*********** Task 1 **************");
+        console.log("X = " + x  + "\n" + "Y = " + y); // x=3 , y=5
+
+
+        //#endregion
+    
+        
+
+        //#region Task2
+        function GetMinMax(...params){
+            
+            return {
+                min : params.length!==0 ? Math.min(...params) : "0",
+                max : params.length!==0 ? Math.max(...params)  : "0"
+            }
+        }
+
+        console.log("*********** Task 2 **************");
+        var {min , max} = GetMinMax(2,3,5,0,4);
+        console.log("min = " + min  + "\n" + "max = " + max);  // min = 0  ,  max = 5
+
+        // var {min , max} = GetMinMax();
+        // console.log("min = " + min  + "\n" + "max = " + max);  // min = 0  ,  max = 0
+        
+        //#endregion
+    
+    
+        //#region Task3
+        var fruits = ["apple", "strawberry", "banana", "orange", "mango" ];
+
+        console.log("*********** Task 3 **************");
+
+        // a. test that every element in the given array is a string
+        console.log( fruits.every((e)=>typeof(e)=='string' ));
+
+        // b. test that some of array elements starts with "a"
+        console.log( fruits.some((e)=>e.startsWith('a')));
+
+        // c. generate new array filtered from the given array with only elements that starts with "b" or "s"
+        var filteredArray =fruits.filter((e)=>e.startsWith('b') || e.startsWith('s'))
+        console.log(filteredArray);
+
+        // d. generate new array, each element of the new array contains a string declaring that you like the give fruit element
+        var DistructuredArray = [...filteredArray]
+        
+        DistructuredArray.forEach(element => {
+            console.log(element)
+        });
+
+        //#endregion
+        
+    </script>
+</body>
+</html>

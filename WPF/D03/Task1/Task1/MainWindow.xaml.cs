@@ -29,10 +29,10 @@ namespace Task1
             Students = new List<Student>()
             {
                 new Student(){Name="Ali",Id=10,Image="img12.jpg",Age=15,Grade=100},
-                new Student(){Name="Omnay",Id=20,Image="img13.jpg",Age=20,Grade=90},
-                new Student(){Name="Amany",Id=30,Image="img14.jpg", Age=25,Grade=100},
-                new Student(){Name="Mai",Id=40,Image="img15.jpg", Age=26,Grade=100},
-                new Student(){Name="Maha",Id=50,Image="img4.jpg",Age=25,Grade=90},
+                new Student(){Name="Omnay",Id=20,Image="img12.jpg",Age=20,Grade=90},
+                new Student(){Name="Amany",Id=30,Image="img12.jpg", Age=25,Grade=100},
+                new Student(){Name="Mai",Id=40,Image="img12.jpg", Age=26,Grade=100},
+                new Student(){Name="Maha",Id=50,Image="img12.jpg",Age=25,Grade=90},
 
 
 
