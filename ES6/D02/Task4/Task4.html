@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function * GenerateIterableObj (object){
+           
+            var counter = 0;
+            var keys = Object.keys(object)
+            
+            for (let key of keys) {
+                    if(counter == keys.length){
+                        yield {
+                            value:undefined,
+                            done:true
+                        } 
+                    }   
+                    else{
+                        yield {
+                            value:{key:key ,value:object[key ++]},
+                            done:false
+                        }
+                    }   
+                
+                
+            }
+           
+            
+        }
+        var obj = {
+            name:"name2",
+            itemValue : "value",
+            itemValue2 : "value2",
+
+        }
+        var ObjIterable =GenerateIterableObj(obj);
+        
+
+        for (let iterator of  GenerateIterableObj(obj)) {
+            console.log(iterator.value);
+        }
+
+        
+    </script>
+</body>
+</html>
