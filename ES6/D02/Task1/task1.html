@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function GenerateCourses(obj){
+            try{
+                var defaultObj = {
+                    courseName : "ES6",
+                    courseDuration : "3 days",
+                    courseOwner : "JavaScript"
+                }
+                var newObj = Object.assign({},defaultObj,obj);
+             
+                if((obj instanceof Object) && Object.keys.length > 0){
+                    var flag = 1 ;  // exsist
+                    for (const key in obj) {
+                        if (Object.keys(defaultObj).includes(key)) {
+                            flag = 1;
+                        }
+                        else flag = 0 // not exsist
+                    }
+                    if(flag == 0){
+                        throw new Error ("Propery not Exsist");
+                    }
+                    else{
+                        console.log(`course Name = ${newObj.courseName} and course Duration will be in ${newObj.courseDuration} and will Tech by ${newObj.courseOwner}  `)
+                    }
+                }
+                else{
+                    console.log(`course Name = ${newObj.courseName} and course Duration will be in ${newObj.courseDuration} and will Tech by ${newObj.courseOwner}  `)
+                }
+            
+            }
+            catch(e){
+                console.error(e.message);
+            }
+        }
+
+        GenerateCourses({courseName : "nj" , courseOwner : "jjd"});
+        GenerateCourses({});
+        GenerateCourses({co : "dd"});
+
+        
+    </script>
+</body>
+</html>
