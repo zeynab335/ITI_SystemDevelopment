@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Text.RegularExpressions;
@@ -540,11 +541,17 @@ namespace D10
             //*Use Group By with a custom comparer that matches words that are consists of the same Characters Together
             string[] Arr5 = { "from   ", " salt", " earn ", "  last   ", " near ", " form  " };
 
-            //Arr5.GroupBy(StringComparaer);
+            var s2 = Arr5.GroupBy(w => w.Trim(), new StringComparaer() );
+            foreach (var item in s2)
+            {
 
-            StringComparaer s = new StringComparaer();
-            Console.WriteLine( s.Compare("From", "salat"));
-            
+                foreach(var i in item)
+                {
+                    Console.WriteLine(i);
+                }
+
+            }
+
             #endregion
 
         }
@@ -555,24 +562,31 @@ namespace D10
 
     
 
-    class StringComparaer : IComparer<string>
+    class StringComparaer : IEqualityComparer<string>
     {
-        public int Compare(string? x, string? y)
+       
+
+        public bool Equals(string? x, string? y)
         {
             int sizeX = (int)x?.Count();
             int sizeY = (int)y?.Count();
 
             int match = 0;
 
-            for (int i=0; i< sizeX; i++)
+            for (int i = 0; i < sizeX; i++)
             {
-                for(int j=0; j< sizeY; j++)
+                for (int j = 0; j < sizeY; j++)
                 {
                     if (x[i] == y[j]) match++;
                 }
             }
 
-            return (match > 2) ? 1 : -1;
+            return (match > 2) ? true : false;
+        }
+
+        public int GetHashCode([DisallowNull] string obj)
+        {
+            return 0;
         }
     }
 }
