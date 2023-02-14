@@ -1,0 +1,11 @@
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Paint.Form1.resources
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Paint.Properties.Resources.resources
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Paint.exe.config
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Paint.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Paint.pdb
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Paint.exe
+H:\ITI\GitHup\ITI_SystemDevelopment\C#\D11\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Paint.pdb
