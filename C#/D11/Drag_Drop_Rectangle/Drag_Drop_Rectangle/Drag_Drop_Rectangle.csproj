@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C2C8D1D-01DB-4AAB-AA82-182FA953D9C9}</ProjectGuid>
+    <ProjectGuid>{CC006335-D173-4568-ABC1-26C92AC6C65D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Paint</RootNamespace>
-    <AssemblyName>Paint</AssemblyName>
+    <RootNamespace>Drag_Drop_Rectangle</RootNamespace>
+    <AssemblyName>Drag_Drop_Rectangle</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

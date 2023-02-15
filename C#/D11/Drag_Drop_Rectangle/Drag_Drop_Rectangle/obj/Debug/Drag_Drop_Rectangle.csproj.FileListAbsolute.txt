@@ -1,0 +1,11 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\bin\Debug\Drag_Drop_Rectangle.exe.config
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\bin\Debug\Drag_Drop_Rectangle.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\bin\Debug\Drag_Drop_Rectangle.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.csproj.SuggestedBindingRedirects.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.Form1.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.Properties.Resources.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.csproj.GenerateResource.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Drag_Drop_Rectangle\Drag_Drop_Rectangle\obj\Debug\Drag_Drop_Rectangle.pdb
