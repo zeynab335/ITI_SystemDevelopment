@@ -1,0 +1,11 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\bin\Debug\Task2.exe.config
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\bin\Debug\Task2.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\bin\Debug\Task2.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.csproj.SuggestedBindingRedirects.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.Form1.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.Properties.Resources.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.csproj.GenerateResource.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D12\Task2\Task2\Task2\obj\Debug\Task2.pdb
