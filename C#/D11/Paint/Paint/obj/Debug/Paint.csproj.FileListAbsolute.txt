@@ -1,0 +1,11 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\bin\Debug\Paint.exe.config
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\bin\Debug\Paint.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\bin\Debug\Paint.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.Form1.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Paint\Paint\obj\Debug\Paint.pdb

@@ -1,0 +1,11 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\bin\Debug\FootBall.exe.config
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\bin\Debug\FootBall.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\bin\Debug\FootBall.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.csproj.SuggestedBindingRedirects.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.Form1.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.Properties.Resources.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.csproj.GenerateResource.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\FootBall\FootBall\obj\Debug\FootBall.pdb

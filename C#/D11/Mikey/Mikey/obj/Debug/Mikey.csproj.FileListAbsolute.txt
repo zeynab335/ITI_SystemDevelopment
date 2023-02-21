@@ -1,0 +1,11 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\bin\Debug\Mikey.exe.config
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\bin\Debug\Mikey.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\bin\Debug\Mikey.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.csproj.SuggestedBindingRedirects.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.Form1.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.Properties.Resources.resources
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.csproj.GenerateResource.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\C#\D11\Mikey\Mikey\obj\Debug\Mikey.pdb
