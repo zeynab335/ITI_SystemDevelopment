@@ -53,8 +53,8 @@ namespace Task2
             sqlDA.Fill(Dtable);
 
             SqlCommandBuilder cmdBuilder = new SqlCommandBuilder(sqlDA);
-            sqlDA.UpdateCommand= cmdBuilder.GetUpdateCommand();
             sqlDA.InsertCommand = cmdBuilder.GetInsertCommand();
+            sqlDA.UpdateCommand= cmdBuilder.GetUpdateCommand();
             sqlDA.DeleteCommand = cmdBuilder.GetDeleteCommand();
 
 

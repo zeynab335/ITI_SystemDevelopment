@@ -506,15 +506,15 @@ namespace D10
 
             //1. Use group by to partition a list of numbers by their remainder when divided by 5
             var LstNumbers = Enumerable.Range(0, 15).GroupBy(n=>n % 5);
-            //foreach(var range in LstNumbers)
-            //{
-            //    foreach(var r1 in range)
-            //    {
-            //        Console.WriteLine(r1.ToString());
-            //    }
-            //    Console.Write("****************\n");
+            foreach (var range in LstNumbers)
+            {
+                foreach (var r1 in range)
+                {
+                    Console.WriteLine(r1.ToString());
+                }
+                Console.Write("****************\n");
 
-            //}
+            }
 
 
             // Uses group by to partition a list of words by their first letter. Use dictionary_english.txt for Input
