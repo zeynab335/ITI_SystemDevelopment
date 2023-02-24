@@ -59,8 +59,7 @@ namespace layered
             publisherCom.DisplayMember = "pub_name";
             publisherCom.DataBindings.Add("SelectedValue", bindingSource, "pub_id");
 
-            bindingNavigator = new(bindingSource);
-
+           
             this.Controls.Add(bindingNavigator);
             bindingNavigator.DeleteItem.Click += DeleteItem_Click;
             //bindingNavigator.AddNewItem. += AddedItem_Click;
