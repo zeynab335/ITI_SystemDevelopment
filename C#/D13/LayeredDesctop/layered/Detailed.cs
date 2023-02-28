@@ -26,6 +26,8 @@ namespace layered
         TitleList titleList;
         PublisherList publishers;
         BindingNavigator bindingNavigator;
+
+
         public Detailed()
         {
             InitializeComponent();
@@ -37,8 +39,8 @@ namespace layered
             // lists
             titleList  = TitleManager.selectAllTitles();
             publishers = PublisherManager.selectAllPublishers();
-
             BindingSource bindingSource = new BindingSource(titleList, "");
+            bindingNavigator = new(bindingSource);
 
             //Simple Data Binding
             id_text.DataBindings.Add("Text", bindingSource, "title_id");
@@ -59,9 +61,10 @@ namespace layered
             publisherCom.DisplayMember = "pub_name";
             publisherCom.DataBindings.Add("SelectedValue", bindingSource, "pub_id");
 
-           
             this.Controls.Add(bindingNavigator);
             bindingNavigator.DeleteItem.Click += DeleteItem_Click;
+
+          
             //bindingNavigator.AddNewItem. += AddedItem_Click;
         }
 
