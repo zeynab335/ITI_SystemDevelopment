@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D09\\D09\\D09\\D09.csproj",
+      "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D09\\D09\\D09\\D09.csproj",
       "projectName": "D09",
-      "projectPath": "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D09\\D09\\D09\\D09.csproj",
+      "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D09\\D09\\D09\\D09.csproj",
       "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-      "outputPath": "H:\\ITI\\GitHup\\ITI_SystemDevelopment\\C#\\D09\\D09\\D09\\obj\\",
+      "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\C#\\D09\\D09\\D09\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",
