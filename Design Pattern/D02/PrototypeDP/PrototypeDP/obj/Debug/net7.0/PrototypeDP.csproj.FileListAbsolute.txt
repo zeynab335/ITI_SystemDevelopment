@@ -1,0 +1,17 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\bin\Debug\net7.0\PrototypeDP.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\bin\Debug\net7.0\PrototypeDP.deps.json
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\bin\Debug\net7.0\PrototypeDP.runtimeconfig.json
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\bin\Debug\net7.0\PrototypeDP.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\bin\Debug\net7.0\PrototypeDP.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\bin\Debug\net7.0\Newtonsoft.Json.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.AssemblyInfo.cs
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.csproj.CopyComplete
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\refint\PrototypeDP.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\PrototypeDP.genruntimeconfig.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D02\PrototypeDP\PrototypeDP\obj\Debug\net7.0\ref\PrototypeDP.dll

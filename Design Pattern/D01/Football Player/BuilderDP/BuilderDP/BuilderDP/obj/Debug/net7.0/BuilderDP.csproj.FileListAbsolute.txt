@@ -1,0 +1,15 @@
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\bin\Debug\net7.0\BuilderDP.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\bin\Debug\net7.0\BuilderDP.deps.json
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\bin\Debug\net7.0\BuilderDP.runtimeconfig.json
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\bin\Debug\net7.0\BuilderDP.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\bin\Debug\net7.0\BuilderDP.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.AssemblyInfo.cs
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\refint\BuilderDP.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\BuilderDP.genruntimeconfig.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\BuilderDP\BuilderDP\BuilderDP\obj\Debug\net7.0\ref\BuilderDP.dll
