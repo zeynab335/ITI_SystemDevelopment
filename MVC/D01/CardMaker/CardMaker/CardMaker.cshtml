@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> welcome page </title>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="Card">
+        <!-- Start Form -->
+        <form method="post" class="form" name="info">
+            <div class="form-control">
+                <label> Choose a backoround image </label>
+
+                <select name="backoround">
+                    @{foreach (var i in Enumerable.Range(0, 12))
+                        {
+                            var value = @i + ".jpg";
+                            <option value = @value> @i </option>
+                        }
+                    }
+                </select>
+
+
+            </div>
+
+            <!-- Font Color -->
+            <div class="form-control">
+                <label> Choose a Font Color </label>
+                <select name="font">
+                    @{foreach (var color in new string[4] { "Red", "Gray", "Teal", "Purple" })
+                        {
+                            <option value="@color"> @color </option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <!-- Greeting Type -->
+            <div class="form-control">
+                <label> Choose a Greeting Type </label>
+
+                @{foreach (var l in new string[4] { "Birthday", "Get Well Soon", "Valentine", "Congrats" })
+                    {
+                        <div class="form-control-radio">
+                            <input name="greetingType" type="radio" value="@l"/>
+                            <label> @l  </label>
+                        </div>
+                    }
+
+
+                }
+            </div>
+
+            <!-- Add the Picture -->
+            <div class="form-control-radio" style="display:block">
+                <input name="addPic" type="checkbox" />
+                <label> Add the Picture </label>
+            </div>
+
+            <!-- Greeting Message -->
+            <div class="form-control">
+                <label> Enter the Greeting Message below </label>
+                <textarea cols="2" name="greetingMsg"></textarea>
+
+            </div>
+            <input type="submit" value="Preview" class="btn-submit" />
+
+        </form>
+        <!--end form-->
+        <!-- start Card Maker -->
+        @if (IsPost)
+         {
+            var url = "backgrounds/" + @Request["backoround"];
+            var fontColor = Request["font"];
+
+            <div class="card-maker" style='background-image:url(@url)'>
+
+                <h1 style="color: @fontColor"> @Request["greetingType"] </h1>
+
+
+                @* show Picture *@
+                @if (Request["addPic"] == "on")
+                {
+                    var imgSrc = "images/" + @Request["greetingType"] + ".gif";
+
+                    <img src=@imgSrc class="card-img" />
+                }
+
+                @* show Greeting Message *@
+                @if (!@Request["greetingMsg"].IsEmpty())
+                {
+                    <h4  style="color: @fontColor"> @Request["greetingMsg"] </h4>
+                }
+            </div>
+        }
+
+        <!-- end Card Maker -->
+
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿@using Templete;
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Page </title>
+</head>
+<body>
+ 
+      
+
+    @section newSec{
+
+        @* webGrid helper *@
+
+        @{
+            List<Service> AllServices = new List<Service>() {
+
+                new Service() {serviceDetails =" Service 1 details..." ,serviceName= "Service 1" , servicePrice=1000m},
+                new Service() {serviceDetails =" Service 2 details..." ,serviceName= "Service 2" , servicePrice=2000m},
+                new Service() {serviceDetails =" Service 3 details..." ,serviceName= "Service 3" , servicePrice=4000m},
+                new Service() {serviceDetails =" Service 4 details..." ,serviceName= "Service 4" , servicePrice=500m},
+
+
+             };
+        }
+
+    <div style="background-color: #264A67; padding:20px; display:flex;justify-content :center ; align-items:center ; color:white">
+        @{
+            WebGrid web = new WebGrid(AllServices);
+
+        }
+
+
+        @web.GetHtml()
+
+        @{
+            var myChart = new Chart(width: 400, height: 300)
+               .AddTitle("Employees")
+
+               .AddSeries(chartType: "column",
+                  xValue: AllServices.Select(s => s.serviceName).ToArray(),
+                  yValues: AllServices.Select(s => s.servicePrice).ToArray());
+
+            <img src=@myChart.Write()/>
+        }
+
+
+
+    </div>
+    }
+
+</body>
+
+
+</html>

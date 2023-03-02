@@ -1,0 +1,55 @@
+﻿body {
+    height: 100vh;
+    background-color: rgba(25, 25, 34, 1);
+    color:white;
+}
+
+
+.form-control{
+    width:25%;
+    display:flex;
+    justify-content:space-between;
+    margin:20px;
+}
+
+.btn-submit {
+    width: 25%;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:0.5s all;
+
+}
+
+.btn-submit:hover {
+   background-color: #1B1922;
+   color: white;
+   border-color: #1B1922;
+}
+.red{
+    color:red;
+}
+
+.form-control label {width:50%}
+.form-control input {
+    width: 50%
+}
+
+.form-control-radio{margin:10px;}
+
+.container {
+    box-shadow: 2px 2px 3px white;
+    width: max-content;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+@media(max-width:768px) {
+    .form-control, .btn-submit, .container {
+        width: 50% !important;
+    }
+}
