@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> welcome page </title>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <form method="post" class="form" name="info">
+        <div class="form-control">
+            <label> Name </label>
+            <input name="name" type="text" />
+        </div>
+
+        <div class="form-control">
+            <label> Birthdate </label>
+            <input name="bithdate" type="date" />
+        </div>
+
+        <div class="form-control-radio" style="display:block">
+            <input name="isGraduated" type="checkbox" />
+            <label> Is Graduated </label>
+        </div>
+
+        <input type="submit" value="Go" class="btn-submit"/>
+
+    </form>
+    
+
+    @{
+        if (IsPost){
+
+        <div class="container">
+            <h1 class="red"> Hello @Request["name"] </h1>
+            <h3> Your Birthdate is:  @Request["bithdate"] </h3>
+
+
+            @if (@Request["isGraduated"] == "on")
+            {
+                <p> Yess Graduated </p>
+
+            }
+            else
+            {
+                <p> Not Graduated </p>
+
+            }
+
+        </div>
+
+        }
+    }
+
+</body>
+</html>
