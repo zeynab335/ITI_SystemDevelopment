@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj": {}
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj": {}
   },
   "projects": {
-    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj": {
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj",
+        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj",
         "projectName": "DecoratorDP",
-        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj",
+        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\DecoratorDP.csproj",
         "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\obj\\",
+        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\DecoratorDP\\DecoratorDP\\DecoratorDP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",

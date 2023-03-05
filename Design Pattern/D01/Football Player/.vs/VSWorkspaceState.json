@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BuilderDP",
+    "\\BuilderDP\\BuilderDP",
+    "\\BuilderDP\\BuilderDP\\BuilderDP"
   ],
+  "SelectedNode": "\\BuilderDP\\BuilderDP\\BuilderDP\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

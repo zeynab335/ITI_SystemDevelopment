@@ -34,7 +34,8 @@
 
         @web.GetHtml()
 
-        @{
+        <!-- chart helper -->
+        @*@{
             var myChart = new Chart(width: 400, height: 300)
                .AddTitle("Employees")
 
@@ -43,7 +44,7 @@
                   yValues: AllServices.Select(s => s.servicePrice).ToArray());
 
             <img src=@myChart.Write()/>
-        }
+        }*@
 
 
 

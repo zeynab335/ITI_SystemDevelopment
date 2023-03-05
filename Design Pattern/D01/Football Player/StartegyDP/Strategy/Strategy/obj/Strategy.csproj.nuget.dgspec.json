@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\New folder\\Strategy\\Strategy\\Strategy.csproj": {}
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\StartegyDP\\Strategy\\Strategy\\Strategy.csproj": {}
   },
   "projects": {
-    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\New folder\\Strategy\\Strategy\\Strategy.csproj": {
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\StartegyDP\\Strategy\\Strategy\\Strategy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\New folder\\Strategy\\Strategy\\Strategy.csproj",
+        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\StartegyDP\\Strategy\\Strategy\\Strategy.csproj",
         "projectName": "Strategy",
-        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\New folder\\Strategy\\Strategy\\Strategy.csproj",
+        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\StartegyDP\\Strategy\\Strategy\\Strategy.csproj",
         "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\New folder\\Strategy\\Strategy\\obj\\",
+        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\StartegyDP\\Strategy\\Strategy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",
