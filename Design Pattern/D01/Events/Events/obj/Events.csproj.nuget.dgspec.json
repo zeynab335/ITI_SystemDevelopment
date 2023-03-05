@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Events\\Events\\Events.csproj": {}
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Events\\Events\\Events.csproj": {}
   },
   "projects": {
-    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Events\\Events\\Events.csproj": {
+    "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Events\\Events\\Events.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Events\\Events\\Events.csproj",
+        "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Events\\Events\\Events.csproj",
         "projectName": "Events",
-        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Events\\Events\\Events.csproj",
+        "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Events\\Events\\Events.csproj",
         "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Events\\Events\\obj\\",
+        "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Events\\Events\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",

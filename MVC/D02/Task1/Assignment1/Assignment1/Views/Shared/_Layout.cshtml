@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="bg-primary">
+   
+    <div class="container body-content">
+        <h1> My MVC Application </h1>
+        <header>
+            <nav class="bg-body-tertiary clearfix" style=" float: right;">
+                <button class="float-end btn-light text-primary">
+                    <a href="/Home"> Home </a>
+                </button>
+
+                <button class="float-end btn-light text-primary">
+                    
+                    <a href="/Home/About"> About </a>
+
+                </button>
+            </nav>
+        </header>
+
+        <div class="container section-data text-primary" style="margin-top:20px">
+            @RenderBody()
+
+        </div>
+        
+
+       
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\ObserverDP\\ObserverDP\\ObserverDP.csproj",
+      "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\ObserverDP\\ObserverDP\\ObserverDP.csproj",
       "projectName": "ObserverDP",
-      "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\ObserverDP\\ObserverDP\\ObserverDP.csproj",
+      "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\ObserverDP\\ObserverDP\\ObserverDP.csproj",
       "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-      "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\ObserverDP\\ObserverDP\\obj\\",
+      "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\ObserverDP\\ObserverDP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",

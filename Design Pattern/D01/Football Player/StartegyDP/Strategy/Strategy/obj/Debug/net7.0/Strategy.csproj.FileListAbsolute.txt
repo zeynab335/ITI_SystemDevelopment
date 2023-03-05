@@ -13,3 +13,18 @@ H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\New folde
 H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\New folder\Strategy\Strategy\obj\Debug\net7.0\Strategy.pdb
 H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\New folder\Strategy\Strategy\obj\Debug\net7.0\Strategy.genruntimeconfig.cache
 H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\Football Player\New folder\Strategy\Strategy\obj\Debug\net7.0\ref\Strategy.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\bin\Debug\net7.0\Strategy.exe
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\bin\Debug\net7.0\Strategy.deps.json
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\bin\Debug\net7.0\Strategy.runtimeconfig.json
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\bin\Debug\net7.0\Strategy.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\bin\Debug\net7.0\Strategy.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.csproj.AssemblyReference.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.GeneratedMSBuildEditorConfig.editorconfig
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.AssemblyInfoInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.AssemblyInfo.cs
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.csproj.CoreCompileInputs.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\refint\Strategy.dll
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.pdb
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\Strategy.genruntimeconfig.cache
+H:\ITI\GitHup\ITI\ITI_SystemDevelopment\Design Pattern\D01\Football Player\StartegyDP\Strategy\Strategy\obj\Debug\net7.0\ref\Strategy.dll

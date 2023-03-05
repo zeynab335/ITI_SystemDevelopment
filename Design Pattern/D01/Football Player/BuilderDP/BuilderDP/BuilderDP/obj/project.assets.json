@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\BuilderDP\\BuilderDP\\BuilderDP\\BuilderDP.csproj",
+      "projectUniqueName": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\BuilderDP\\BuilderDP\\BuilderDP\\BuilderDP.csproj",
       "projectName": "BuilderDP",
-      "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\BuilderDP\\BuilderDP\\BuilderDP\\BuilderDP.csproj",
+      "projectPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\BuilderDP\\BuilderDP\\BuilderDP\\BuilderDP.csproj",
       "packagesPath": "C:\\Users\\ht\\.nuget\\packages\\",
-      "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\Football Player\\BuilderDP\\BuilderDP\\BuilderDP\\obj\\",
+      "outputPath": "H:\\ITI\\GitHup\\ITI\\ITI_SystemDevelopment\\Design Pattern\\D01\\Football Player\\BuilderDP\\BuilderDP\\BuilderDP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ht\\AppData\\Roaming\\NuGet\\NuGet.Config",
