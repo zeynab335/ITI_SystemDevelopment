@@ -1,0 +1,74 @@
+﻿@model Pups.Models.employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.minit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.minit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.job_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.job_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.job_lvl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.job_lvl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hire_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hire_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.publisher.pub_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.publisher.pub_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { emp_id = Model.emp_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
