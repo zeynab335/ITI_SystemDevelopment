@@ -1,0 +1,48 @@
+﻿@model Task1.Models.employee
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="emp_id" class="control-label"></label>
+                <input asp-for="emp_id" class="form-control" />
+                <span asp-validation-for="emp_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fname" class="control-label"></label>
+                <input asp-for="fname" class="form-control" />
+                <span asp-validation-for="fname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="minit" class="control-label"></label>
+                <input asp-for="minit" class="form-control" />
+                <span asp-validation-for="minit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lname" class="control-label"></label>
+                <input asp-for="lname" class="form-control" />
+                <span asp-validation-for="lname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,48 @@
+﻿@using CarAssignment.Models;
+@{
+    ViewBag.Title = "GetAllCars";
+}
+
+<h2 class="text-center">GetAllCars</h2>
+
+<div style="margin-top:100px;">
+    <table class="table table-dark responsive" style="color:white; font-size:18px">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Model</th>
+                <th scope="col">Manfacuture</th>
+                <th scope="col">Color</th>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">&nbsp;</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var car in @ViewBag.Cars)
+                {
+                        <tr>
+                            <th scope="row">@car.Num</th>
+                            <td>@car.Model</td>
+                            <td>@car.Manfacture</td>
+                            <td>@car.Color</td>
+                            <td>
+                                <a class="btn btn-primary"  href ="/Home/GetCar/@car.Num" style="font-weight:bold"> View </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-success" href ="/Home/Edit/@car.Num" style="font-weight: bold"> Edit </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger"  href ="/Home/Delete/@car.Num"  style="font-weight:bold"> Delete </a>
+                            </td>
+
+                        </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>
+</div>
