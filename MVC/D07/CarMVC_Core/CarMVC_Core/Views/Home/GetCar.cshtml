@@ -1,0 +1,36 @@
+﻿@using CarAssignment.Models;
+@{
+    ViewBag.Title = "GetCar";
+    Car carDetails = (Car)ViewBag.carDetails;
+}
+
+<h2 class="text-center" >Car Details </h2>
+
+@{
+    if (carDetails is Car && carDetails != null)
+    {
+        <div class="card" style="margin:100px 50px ; font-size:25px">
+            <div class="card-header">
+                Car Model : @carDetails.Model
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" style="margin-top:25px"> Manfacture :  @carDetails.Manfacture </h5>
+                <p class="card-text" style="margin-top:25px"> @carDetails.Color </p>
+
+                <div style="margin-top:50px">
+                    <a href="/Home/Edit/@carDetails.Num" class="btn btn-success col-lg-2" style="margin:5px"> Edit </a>
+                    <a href="#" class="btn btn-danger col-lg-2" style="margin:5px"> Delete </a>
+                    <a href="/Home/Delete/@carDetails.Num" class="btn btn-primary col-lg-2" style="margin:5px"> View All Cars</a>
+
+                </div>
+               
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert"> No Car With this Number </div>
+    }
+
+   }
+

@@ -1,0 +1,13 @@
+[
+  {
+    "outputFileName": "wwwroot/css/min/AllStyles.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.css",
+      "wwwroot/css/bootstrap-theme.css",
+      "wwwroot/css/Site.css"
+
+    ],
+    "minify": { "enabled": true }
+  }
+
+]

@@ -1,0 +1,17 @@
+﻿@using CarAssignment.Models;
+@{
+    ViewBag.Title = "Edit";
+    Car car = ViewBag.editedCar;
+}
+
+<h1 class="text-center"> Edit Car Details </h1> 
+<form method="post" action="/Home/Edit" class="edit-form">
+    <input class="form-control form-control-lg" type="number" placeholder="@car.Num" name="id" value="@car.Num"/>
+    <input class="form-control form-control-lg" type="text" placeholder="@car.Model" name="Model" value="@car.Model"/>
+    <input class="form-control" type="text" placeholder="@car.Manfacture" name="Manfacture" value="@car.Manfacture"/>
+    <input class="form-control form-control-sm" type="text" placeholder="@car.Color" name="Color" value="@car.Color"/>
+
+    <input type="submit" value="Submit" class="btn btn-success" />
+</form>
+
+
