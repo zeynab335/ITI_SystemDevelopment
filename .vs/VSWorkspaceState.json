@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C#",
+    "\\C#\\HotelManagment_Dapper",
+    "\\C#\\HotelManagment_Dapper\\Hotel",
+    "\\C#\\HotelManagment_Dapper\\Hotel\\Hotel",
+    "\\C#\\HotelManagment_Dapper\\Hotel\\Hotel\\UI",
+    "\\C#\\HotelManagment_Dapper\\Hotel\\Hotel\\UI\\FrontEnd"
   ],
-  "SelectedNode": "\\WpfApp1.sln",
+  "SelectedNode": "\\C#\\HotelManagment_Dapper\\Hotel\\Hotel\\UI\\FrontEnd\\FrontEndForm.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
