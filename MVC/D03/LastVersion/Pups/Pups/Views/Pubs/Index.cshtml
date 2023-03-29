@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Pups.Models.employee>
+
+@helper SearchForStudet()
+{
+
+
+    <form method="get">
+        <div class="form-group">
+            <div class="col-md-10" style="margin-bottom:50px">
+                @Html.DropDownList("pub_id", new SelectList(ViewBag.PublisherList, "pub_id", "pub_name"), htmlAttributes: new { @class = "form-control", @style = "display:inline-block;" })
+                <input type="submit" value="Search" class="btn btn-default" />
+                @Html.ActionLink("Show All Students", "Index")
+            </div>
+
+        </div>
+    </form>
+}
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h3> @Model.Count() </h3>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    @SearchForStudet();
+
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.minit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.job_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.job_lvl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hire_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.publisher.pub_name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.fname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.minit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.job_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.job_lvl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hire_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.publisher.pub_name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { emp_id = item.emp_id }) |
+                @Html.ActionLink("Details", "Details", new { emp_id = item.emp_id }) |
+                @Html.ActionLink("Delete", "Delete", new { emp_id = item.emp_id })
+            </td>
+        </tr>
+    }
+
+</table>

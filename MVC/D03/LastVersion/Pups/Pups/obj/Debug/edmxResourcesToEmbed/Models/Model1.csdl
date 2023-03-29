@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pubsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="String" MaxLength="9" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="fname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="minit" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="lname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="job_id" Type="Int16" Nullable="false" />
+    <Property Name="job_lvl" Type="Byte" />
+    <Property Name="pub_id" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="hire_date" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="publisher" Relationship="Self.FK_employee_publishers" FromRole="employee" ToRole="publishers" />
+  </EntityType>
+  <EntityType Name="publisher">
+    <Key>
+      <PropertyRef Name="pub_id" />
+    </Key>
+    <Property Name="pub_id" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="pub_name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="state" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="employees" Relationship="Self.FK_employee_publishers" FromRole="publishers" ToRole="employee" />
+  </EntityType>
+  <Association Name="FK_employee_publishers">
+    <End Role="publishers" Type="Self.publisher" Multiplicity="0..1" />
+    <End Role="employee" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publishers">
+        <PropertyRef Name="pub_id" />
+      </Principal>
+      <Dependent Role="employee">
+        <PropertyRef Name="pub_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pubsEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="employees" EntityType="Self.employee" />
+    <EntitySet Name="publishers" EntityType="Self.publisher" />
+    <AssociationSet Name="FK_employee_publishers" Association="Self.FK_employee_publishers">
+      <End Role="publishers" EntitySet="publishers" />
+      <End Role="employee" EntitySet="employees" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

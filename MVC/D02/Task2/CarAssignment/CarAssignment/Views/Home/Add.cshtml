@@ -1,0 +1,14 @@
+﻿@using CarAssignment.Models;
+@{
+    ViewBag.Title = "Add";
+}
+
+<h1 class="text-center"> Add New Car Details </h1>
+<form method="post" action="/Home/Add" class="edit-form">
+    <input class="form-control form-control-lg" type="number" placeholder="555" name="id"  />
+    <input class="form-control form-control-lg" type="text" placeholder="Zotye Z100 2020" name="Model"  />
+    <input class="form-control" type="text" placeholder="Company-3" name="Manfacture"  />
+    <input class="form-control form-control-sm" type="text" placeholder="Blue" name="Color"  />
+
+    <input type="submit" value="Submit" class="btn btn-success" />
+</form>
