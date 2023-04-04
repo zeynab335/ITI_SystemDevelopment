@@ -1,0 +1,20 @@
+
+.Container{
+  margin-top: 50px;
+}
+img{
+  width: 250px;
+  height: 250px;
+}
+
+.btns{margin-top: 20px;}
+.btns  button{
+  border: 0;
+  background-color: cadetblue;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}

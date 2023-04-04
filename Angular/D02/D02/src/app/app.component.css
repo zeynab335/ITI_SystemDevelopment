@@ -1,0 +1,25 @@
+.d-none{
+  display: none ;
+}
+
+.d-block{
+  display: block ;
+}
+
+
+.btn{
+  background-color: cadetblue;
+  color: white;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.container-flex{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  margin-top: 100px;
+}
