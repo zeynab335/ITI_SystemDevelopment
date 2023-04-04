@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BindingComponent } from '../Components/Binding/Binding.component';
 import { FormsModule } from '@angular/forms';
+import { SliderComponent } from 'src/Components/Slider/Slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-      BindingComponent
+      BindingComponent,
+      SliderComponent
    ],
   imports: [
     BrowserModule,
@@ -19,4 +21,6 @@ import { FormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

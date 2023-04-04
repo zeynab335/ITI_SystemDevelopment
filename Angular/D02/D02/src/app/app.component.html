@@ -1,1 +1,11 @@
-<app-Binding> </app-Binding>
+<app-Binding [class]="showBinding"> </app-Binding>
+<app-Slider [class]="showSlider"> </app-Slider>
+
+
+
+<div class="container-flex">
+  <button (click) = "ShowBindingHandler()" class="btn" [class]="btnBinding" > Two way Binding </button>
+  <button (click) = "ShowSliderHandler()" class="btn"  [class]="btnSlider"> Show Slider</button>
+
+
+</div>
