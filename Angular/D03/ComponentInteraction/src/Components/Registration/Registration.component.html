@@ -1,0 +1,21 @@
+<div>
+    <label> Name </label>
+    <input type="text" [(ngModel)]="name" placeholder="Enter Your name" />
+    <div *ngIf="name.length < 3 && name" class="error">
+      Name Not Valid
+    </div>
+    <br>
+    <div>
+      <label> Age </label>
+      <input type="number" [(ngModel)]="age" minlength="0" maxlength="100" placeholder="Enter Your age" />
+      <div *ngIf="+age>40" class="error">
+        Age Not Valid
+      </div>
+    </div>
+
+    <button (click)="addData()"> Add </button>
+
+
+
+</div>
+
