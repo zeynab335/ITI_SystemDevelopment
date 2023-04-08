@@ -1,0 +1,6 @@
+<h1> Component Interaction</h1>
+<div>
+  <app-Registration (RegisterEvent)="GetStudents($event)"></app-Registration>
+  <app-Students [Students] = "AllStudents"></app-Students>
+</div>
+
