@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "name": "zeze",
+      "email": "z@email.com",
+      "phone": "5555",
+      "age": "22",
+      "courses": [
+        "Js"
+      ],
+      "id": 1
+    },
+    {
+      "name": "zeinab",
+      "email": "zeinab@email.com",
+      "phone": "0111555",
+      "age": "20",
+      "id": 2
+    },
+    {
+      "name": "Adham Mahmoud",
+      "email": "am@email.com",
+      "phone": "+20114556554",
+      "age": "20",
+      "id": 3
+    },
+    {
+      "name": "zeinab3",
+      "email": "zeinab@email.com",
+      "phone": "0111555",
+      "age": "20",
+      "id": 4
+    },
+    {
+      "name": "ss",
+      "email": "ssss@dd.com",
+      "phone": "5555555",
+      "age": "20",
+      "courses": [
+        "c#"
+      ],
+      "id": 5
+    },
+    {
+      "name": "zeinab4",
+      "email": "zeinab@email.com",
+      "phone": "0111555",
+      "age": "20",
+      "courses": [
+        ".net",
+        "Js"
+      ],
+      "id": 6
+    }
+  ]
+}
