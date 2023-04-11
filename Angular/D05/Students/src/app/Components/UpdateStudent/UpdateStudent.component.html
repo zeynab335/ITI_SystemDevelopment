@@ -1,0 +1,49 @@
+<div class="w-50 mx-auto my-5">
+
+
+
+  <h1 class="my-5 text-center text-success "> Update student </h1>
+
+  <div class="alert alert-success text-center m-3" *ngIf="isUpdated"> Updated Successfully </div>
+
+  <div class="form">
+    <div class="form-group d-flex m-2">
+      <label class="col-3">Name</label>
+      <input #name type="text" class="form-control" aria-label="name" value="{{studentDetails?.name}}"/>
+    </div>
+    <div class="form-group d-flex m-2">
+      <label class="col-3">Email</label>
+      <input #email type="email" class="form-control" aria-label="email" value="{{studentDetails?.email}}"/>
+    </div>
+    <div class="form-group d-flex m-2">
+      <label class="col-3">Age</label>
+      <input #age type="number" class="form-control" aria-label="age" value="{{studentDetails?.age}}"/>
+    </div>
+    <div class="form-group d-flex m-2">
+      <label class="col-3">Phone</label>
+      <input #phone type="text" class="form-control" aria-label="phone" value="{{studentDetails?.phone}}" />
+    </div>
+
+    <div class="form-group d-flex m-2">
+      <label class="col-3">Courses</label>
+      <ul>
+        <li *ngFor="let s of studentDetails?.courses">
+          {{s}}
+        </li>
+      </ul>
+      <br>
+      <select multiple class="form-select" aria-label="select" (change)="changeHandler($event)" >
+        <option value="c#">C#</option>
+        <option value="Js">Js</option>
+        <option value=".net">.net</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="button" value="Update" (click)="Update(name.value, email.value, phone.value , age.value)" class="btn btn-outline-success w-25 mt-3 text-center"/>
+    </div>
+
+
+  </div>
+
+</div>
